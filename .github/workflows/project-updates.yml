@@ -1,6 +1,11 @@
 name: Project updates
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/project-updates.yml"
+      - "scripts/update_project_feed.py"
   pull_request:
     paths:
       - ".github/workflows/project-updates.yml"
@@ -25,6 +30,8 @@ jobs:
         with:
           persist-credentials: false
       - name: Generate project updates
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
 
   refresh:
@@ -36,6 +43,8 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Generate project updates
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
       - name: Publish the generated feed
         shell: bash
@@ -43,8 +52,8 @@ jobs:
           branch=profile-updates
           git fetch --no-tags origin "refs/heads/$branch"
           git switch --detach FETCH_HEAD
-          cp "$RUNNER_TEMP/project-feed/"{README.md,project-updates.svg} .
-          git add -- README.md project-updates.svg
+          cp "$RUNNER_TEMP/project-feed/"{README.md,project-updates.svg,project-stats.svg} .
+          git add -- README.md project-updates.svg project-stats.svg
 
           if git diff --cached --quiet; then
             exit 0

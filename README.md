@@ -68,6 +68,12 @@ An animated summary of a recorded offline run with fictional cases, a fixture as
 
 [Explore the connections and source notes](docs/project-map.md)
 
+## Repository statistics
+
+[![Featured public repository statistics. Open the snapshot details for repository languages and star counts.](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/project-stats.svg)](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
+
+[View repository statistics](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
+
 ## Latest project updates
 
 [![Latest activity from Hudson Forge projects. Open the full list for release notes and commit links.](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/project-updates.svg)](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#latest-project-updates)

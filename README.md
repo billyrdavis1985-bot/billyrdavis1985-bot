@@ -8,6 +8,17 @@ I build AI systems that record how decisions are made and research tools that ma
 
 [Company website](https://hudsonforgetechnology.com) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
 
+## ForgeVigil in action
+
+An animated summary of a recorded offline run with fictional cases, a fixture assessor, and a scripted operator release.
+
+<picture>
+<source media="(prefers-reduced-motion: reduce)" srcset="assets/demos/forgevigil-demo.png">
+<img src="assets/demos/forgevigil-demo.gif" alt="ForgeVigil offline demo. An approved request is allowed, a restricted document is denied, an unverified approval is held for review, a repeated request is replayed, and the scripted operator releases the held request after rechecks. The run ends with two approved outbox items and RESULT PASS." width="760">
+</picture>
+
+[Full transcript and reproduction steps](docs/forgevigil-demo.md) · [Try the interactive walkthrough](https://forgevigil.com)
+
 ## Project gallery
 
 <table>
@@ -50,6 +61,12 @@ I build AI systems that record how decisions are made and research tools that ma
 </td>
 </tr>
 </table>
+
+## Project map
+
+[![Hudson Forge project map. HF-IQR benchmark research informs HF Critic, whose local reasoning critics are evaluated by Forge Agent. ForgeVigil, QNN-P1, and WIPS cover document controls, quantum hardware, and manufacturing safety.](assets/project-map.svg)](docs/project-map.md)
+
+[Explore the connections and source notes](docs/project-map.md)
 
 ## Latest project updates
 

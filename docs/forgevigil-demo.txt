@@ -1,0 +1,241 @@
+ForgeVigil smoke demo - fixture assessor, no inference, temporary synthetic state
+
+[ALLOW case] HTTP 200 disposition=ALLOW reason=ALL_CHECKS_PASSED delivered=True
+{
+  "actor_id": "operator",
+  "approval_check": "verified",
+  "approval_ref": "HR-2026-118",
+  "assessment": {
+    "adapter_id": "fixture.fixed-clean.v1",
+    "diagnostics": null,
+    "evidence_check": {
+      "quotes": [],
+      "refs": [
+        {
+          "claim": "other",
+          "kind": "fixture",
+          "relation": "other",
+          "result": "verified"
+        }
+      ],
+      "threat_support": "not_applicable"
+    },
+    "reason_code": "FIXTURE_FIXED_CLEAN",
+    "status": "completed",
+    "threat_finding": "none",
+    "validation_error": null
+  },
+  "authority": {
+    "generation": null,
+    "kind": "builtin",
+    "snapshot": null
+  },
+  "completed_at": "2026-11-17T19:48:50.009962Z",
+  "delivered": true,
+  "delivery_context": {
+    "binding": "hmac-sha256:01e7de8d7a93997a2cc3dda3d7912eff27c4e0de51edbce71a5cd8638d22473e",
+    "document_sha256": "c77b023bf82204210799c66c59bf4bbd71542cdc6c7e0c5f12a1945d70a934e1",
+    "document_version": "cp01.fixtures.v1",
+    "recipient_version": "cp01.fixtures.v1"
+  },
+  "disposition": "ALLOW",
+  "document_id": "public-spec",
+  "effect_id": "fx_a3b81b1c003441f887f434c7a04e6a4b",
+  "fallback_state": "none",
+  "input_digest": "hmac-sha256:589baca7408a6c130a7a333d1ae24aeb2393c85534db32d4cd70510c4e3f2dbd",
+  "policy_digest": "sha256:51a09362aa85cab8bbe1c6ff1cb28e2e3a4dc4fef218b6b4876c08450398db1f",
+  "reason_code": "ALL_CHECKS_PASSED",
+  "receipt_id": "rcpt_c82a973e7c36445c985d65931b258dea",
+  "receipt_schema": "forgevigil.receipt.v6",
+  "received_at": "2026-11-17T19:48:50.008940Z",
+  "recipient_id": "supplier",
+  "request_id": "demo-allow-1",
+  "usage": {
+    "cost_usd": "0.00",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reason": "fixture_mode_no_paid_inference",
+    "status": "zero"
+  },
+  "versions": {
+    "assessment_schema": "forgevigil.assessment.v3",
+    "code": "0.25.0",
+    "fixture": "cp01.fixtures.v1",
+    "policy": "cp04.policy.v1",
+    "prompt": "none:fixture-mode",
+    "request_schema": "forgevigil.request.v1"
+  }
+}
+
+[DENY case] HTTP 403 disposition=DENY reason=DOCUMENT_RESTRICTED delivered=False
+{
+  "actor_id": "operator",
+  "approval_check": "not_checked",
+  "approval_ref": "HR-2026-118",
+  "assessment": {
+    "adapter_id": "fixture.fixed-clean.v1",
+    "diagnostics": null,
+    "evidence_check": null,
+    "reason_code": null,
+    "status": "not_run",
+    "threat_finding": "not_assessed",
+    "validation_error": null
+  },
+  "authority": {
+    "generation": null,
+    "kind": "builtin",
+    "snapshot": null
+  },
+  "completed_at": "2026-11-17T19:48:50.012265Z",
+  "delivered": false,
+  "delivery_context": {
+    "binding": "hmac-sha256:44c3c60ec33a7234d6126d41dd67db5856d9752756ab40954aba3687b3ecd79f",
+    "document_sha256": "33313189b44056f13253f9b79df2ca9a242c68b5d09dd44cb692e6bbfde797af",
+    "document_version": "cp01.fixtures.v1",
+    "recipient_version": "cp01.fixtures.v1"
+  },
+  "disposition": "DENY",
+  "document_id": "restricted-cost-sheet",
+  "effect_id": null,
+  "fallback_state": "none",
+  "input_digest": "hmac-sha256:21c4ce9076e2ccd23ff4b42e84d654734421602f5811450e20b67555d7b17343",
+  "policy_digest": "sha256:51a09362aa85cab8bbe1c6ff1cb28e2e3a4dc4fef218b6b4876c08450398db1f",
+  "reason_code": "DOCUMENT_RESTRICTED",
+  "receipt_id": "rcpt_f2f5df03d3ef4729bb9b77b481ad09de",
+  "receipt_schema": "forgevigil.receipt.v6",
+  "received_at": "2026-11-17T19:48:50.011773Z",
+  "recipient_id": "supplier",
+  "request_id": "demo-deny-1",
+  "usage": {
+    "cost_usd": "0.00",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reason": "assessment_not_run_no_inference_call",
+    "status": "zero"
+  },
+  "versions": {
+    "assessment_schema": "forgevigil.assessment.v3",
+    "code": "0.25.0",
+    "fixture": "cp01.fixtures.v1",
+    "policy": "cp04.policy.v1",
+    "prompt": "none:fixture-mode",
+    "request_schema": "forgevigil.request.v1"
+  }
+}
+
+[REVIEW case] HTTP 202 disposition=REVIEW reason=APPROVAL_UNVERIFIED delivered=False
+{
+  "actor_id": "operator",
+  "approval_check": "unverified",
+  "approval_ref": "HR-2026-999",
+  "assessment": {
+    "adapter_id": "fixture.fixed-clean.v1",
+    "diagnostics": null,
+    "evidence_check": {
+      "quotes": [],
+      "refs": [
+        {
+          "claim": "other",
+          "kind": "fixture",
+          "relation": "other",
+          "result": "verified"
+        }
+      ],
+      "threat_support": "not_applicable"
+    },
+    "reason_code": "FIXTURE_FIXED_CLEAN",
+    "status": "completed",
+    "threat_finding": "none",
+    "validation_error": null
+  },
+  "authority": {
+    "generation": null,
+    "kind": "builtin",
+    "snapshot": null
+  },
+  "completed_at": "2026-11-17T19:48:50.014375Z",
+  "delivered": false,
+  "delivery_context": {
+    "binding": "hmac-sha256:01e7de8d7a93997a2cc3dda3d7912eff27c4e0de51edbce71a5cd8638d22473e",
+    "document_sha256": "c77b023bf82204210799c66c59bf4bbd71542cdc6c7e0c5f12a1945d70a934e1",
+    "document_version": "cp01.fixtures.v1",
+    "recipient_version": "cp01.fixtures.v1"
+  },
+  "disposition": "REVIEW",
+  "document_id": "public-spec",
+  "effect_id": null,
+  "fallback_state": "none",
+  "input_digest": "hmac-sha256:d52f8ef254332c59946d3c8728329d5448a73752b36bcfa3ccf279bc7a913e9c",
+  "policy_digest": "sha256:51a09362aa85cab8bbe1c6ff1cb28e2e3a4dc4fef218b6b4876c08450398db1f",
+  "reason_code": "APPROVAL_UNVERIFIED",
+  "receipt_id": "rcpt_b5eaacc9e18240868b4592e2532ae89b",
+  "receipt_schema": "forgevigil.receipt.v6",
+  "received_at": "2026-11-17T19:48:50.013490Z",
+  "recipient_id": "supplier",
+  "request_id": "demo-review-1",
+  "usage": {
+    "cost_usd": "0.00",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reason": "fixture_mode_no_paid_inference",
+    "status": "zero"
+  },
+  "versions": {
+    "assessment_schema": "forgevigil.assessment.v3",
+    "code": "0.25.0",
+    "fixture": "cp01.fixtures.v1",
+    "policy": "cp04.policy.v1",
+    "prompt": "none:fixture-mode",
+    "request_schema": "forgevigil.request.v1"
+  }
+}
+
+[replay of ALLOW case] HTTP 200 outcome=replayed (no new assessment or delivery)
+
+[operator release of REVIEW case] released by demo-operator, scope re-check passed, effect_id=fx_f1b2f3437cbb4ec7b10a94bfbd780c70
+{
+  "actor_id": "operator",
+  "authority_at_review": {
+    "generation": null,
+    "kind": "builtin",
+    "snapshot": null
+  },
+  "binding_check": "matched",
+  "current_approval_check": "unverified",
+  "current_approval_status": "unverified",
+  "decided_at": "2026-11-17T19:48:50.019833Z",
+  "decision": "release",
+  "delivered": true,
+  "despite_threat": false,
+  "effect_id": "fx_f1b2f3437cbb4ec7b10a94bfbd780c70",
+  "original_disposition": "REVIEW",
+  "original_reason_code": "APPROVAL_UNVERIFIED",
+  "original_receipt_id": "rcpt_b5eaacc9e18240868b4592e2532ae89b",
+  "original_threat_finding": "none",
+  "policy_digest": "sha256:51a09362aa85cab8bbe1c6ff1cb28e2e3a4dc4fef218b6b4876c08450398db1f",
+  "request_id": "demo-review-1",
+  "review_id": "rev_66a367c3a2bc44e1a8f27fce75aac60b",
+  "review_schema": "forgevigil.review.v2",
+  "reviewer": "demo-operator",
+  "scope_recheck": "passed",
+  "versions": {
+    "code": "0.25.0",
+    "policy": "cp04.policy.v1"
+  }
+}
+
+[replay of REVIEW case] HTTP 200 delivered=True review=release
+
+outbox items: 2 (expected 2; only approved public-spec bytes: True)
+
+ForgeVigil report: 2026-11-17T19:48:50.008940Z to 2026-11-17T19:48:50.013490Z
+
+Requests:    3 (ALLOW 1, BLOCK 0, DENY 1, REVIEW 1)
+Deliveries:  2 (1 allowed, 1 released by the operator)
+Reviews:     0 pending (REVIEW 0, BLOCK 0); decided: release 1, reject 0, confirm 0, false-positive 0
+Threats:     0 flagged by the model; 0 held because evidence didn't check out; 0 blocks confirmed, 0 marked false positive
+Model:       2 assessments, 0 failures (none)
+Spend:       0.00 USD over 0 model calls (0 settled, 0 unknown usage, 0 in flight); 0 input / 0 output tokens
+Top reasons: ALL_CHECKS_PASSED 1, APPROVAL_UNVERIFIED 1, DOCUMENT_RESTRICTED 1
+temporary demo state removed
+RESULT: PASS

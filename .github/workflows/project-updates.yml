@@ -6,10 +6,14 @@ on:
     paths:
       - ".github/workflows/project-updates.yml"
       - "scripts/update_project_feed.py"
+      - "scripts/render_contributions.py"
+      - "scripts/test_profile_visuals.py"
   pull_request:
     paths:
       - ".github/workflows/project-updates.yml"
       - "scripts/update_project_feed.py"
+      - "scripts/render_contributions.py"
+      - "scripts/test_profile_visuals.py"
   schedule:
     - cron: "23 8 * * *"
   workflow_dispatch:
@@ -29,10 +33,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Generate project updates
+      - name: Check visual generators
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Generate public profile visuals
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
+        run: |
+          python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
+          python3 scripts/render_contributions.py "$RUNNER_TEMP/project-feed"
 
   refresh:
     if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch
@@ -42,18 +50,23 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Generate project updates
+      - name: Generate public profile visuals
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
+        run: |
+          python3 scripts/update_project_feed.py "$RUNNER_TEMP/project-feed"
+          python3 scripts/render_contributions.py "$RUNNER_TEMP/project-feed"
       - name: Publish the generated feed
         shell: bash
         run: |
           branch=profile-updates
           git fetch --no-tags origin "refs/heads/$branch"
           git switch --detach FETCH_HEAD
-          cp "$RUNNER_TEMP/project-feed/"{README.md,project-updates.svg,project-stats.svg} .
-          git add -- README.md project-updates.svg project-stats.svg
+          files=(README.md project-updates.svg project-stats.svg contribution-skyline.svg contribution-skyline-static.svg contributions.json)
+          for file in "${files[@]}"; do
+            cp "$RUNNER_TEMP/project-feed/$file" "$file"
+          done
+          git add -- "${files[@]}"
 
           if git diff --cached --quiet; then
             exit 0
@@ -63,3 +76,4 @@ jobs:
               -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
               commit -m "Refresh project updates"
           git push origin "HEAD:refs/heads/$branch"
+

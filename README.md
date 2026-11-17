@@ -8,6 +8,17 @@ I build AI systems that record how decisions are made and research tools that ma
 
 [Company website](https://hudsonforgetechnology.com) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
 
+## Built day by day
+
+<a href="https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#contribution-skyline">
+<picture>
+<source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/contribution-skyline-static.svg">
+<img src="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/contribution-skyline.svg" alt="Animated copper contribution skyline. Each building represents one day in the past year. Building height follows the day's contribution count on a logarithmic scale, and roof color follows GitHub's activity level." width="760">
+</picture>
+</a>
+
+[View calendar data](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/profile-updates/contributions.json) · [Static view](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/contribution-skyline-static.svg) · [How it works](docs/profile-visuals.md)
+
 ## ForgeVigil in action
 
 An animated summary of a recorded offline run with fictional cases, a fixture assessor, and a scripted operator release.
@@ -20,6 +31,8 @@ An animated summary of a recorded offline run with fictional cases, a fixture as
 [Full transcript and reproduction steps](docs/forgevigil-demo.md) · [Try the interactive walkthrough](https://forgevigil.com)
 
 ## Project gallery
+
+Six selected projects. [Explore the full public collection, including forks](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics).
 
 <table>
 <tr>
@@ -70,7 +83,7 @@ An animated summary of a recorded offline run with fictional cases, a fixture as
 
 ## Repository statistics
 
-[![Featured public repository statistics. Open the snapshot details for repository languages and star counts.](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/project-stats.svg)](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
+[![All public repository statistics, with original projects and forks counted separately. Open the full directory for languages and star counts.](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/project-stats.svg)](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
 
 [View repository statistics](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
 
@@ -88,3 +101,4 @@ An animated summary of a recorded offline run with fictional cases, a fixture as
 </details>
 
 [More IRMB research on framing in AI reasoning](https://github.com/billyrdavis1985-bot/mtca-research) · [Quantum coordination experiments](https://github.com/billyrdavis1985-bot/IRMB_Phase7G_Design5_QuantumCausality)
+

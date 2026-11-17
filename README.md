@@ -18,6 +18,12 @@ ForgeVigil helps small businesses decide whether outgoing documents can be sent.
 
 [![ForgeVigil offline qualification on main](https://github.com/billyrdavis1985-bot/ForgeVigil/actions/workflows/qual.yml/badge.svg?branch=main&event=push)](https://github.com/billyrdavis1985-bot/ForgeVigil/actions/workflows/qual.yml?query=branch%3Amain+event%3Apush)
 
+## Latest project updates
+
+[![Latest activity from Hudson Forge projects. Open the full list for release notes and commit links.](https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/project-updates.svg)](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#latest-project-updates)
+
+[See all six project updates](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#latest-project-updates)
+
 ## Selected projects
 
 | Project | What you can explore |

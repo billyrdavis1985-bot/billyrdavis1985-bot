@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="240" viewBox="0 0 300 240" font-family="system-ui,sans-serif">
+  <title>Explore Quantum research</title>
+  <desc>Hardware, drift, error correction. Compact category navigation.</desc>
+  <rect x="1" y="1" width="298" height="238" rx="14" fill="#0b1420" stroke="#405366"/>
+  <text x="22" y="30" fill="#edb483" font-size="11" letter-spacing="1">02 / EXPLORE</text>
+  <g transform="translate(43 -7) scale(.4)">
+      <path d="m419 76 61-35 61 35v70l-61 35-61-35z M419 76l61 35 61-35 M480 111v70 M480 41v70 M419 146l61-35 61 35" fill="none" stroke="#bd8b67" stroke-width="2.4"/>
+      <ellipse cx="480" cy="111" rx="87" ry="31" transform="rotate(-28 480 111)" fill="none" stroke="#90d2e3" stroke-width="1.5" opacity=".8"/>
+      <g fill="#edb483" stroke="#694b37" stroke-width="2">
+        <circle cx="419" cy="76" r="7"/><circle cx="480" cy="41" r="8"/>
+        <circle cx="541" cy="76" r="7"/><circle cx="419" cy="146" r="7"/>
+        <circle cx="480" cy="181" r="8"/><circle cx="541" cy="146" r="7"/>
+      </g><circle cx="480" cy="111" r="12" fill="#c7eaf1"/>
+      <circle cx="557" cy="79" r="5" fill="#90d2e3"/>
+    </g>
+  <text x="22" y="114" fill="#eef3f7" font-size="32" font-weight="700">Quantum</text>
+  <text x="22" y="153" fill="#eef3f7" font-size="32" font-weight="700">research</text>
+  <path d="M22 183h256" stroke="#304152"/>
+  <text x="22" y="214" fill="#edb483" font-size="15">Open collection</text>
+  <path d="M252 208h22m-7-7 7 7-7 7" fill="none" stroke="#edb483" stroke-width="2"/>
+</svg>

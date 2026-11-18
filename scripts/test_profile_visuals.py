@@ -1,6 +1,6 @@
 """Checks for incomplete public data, pagination and private-data exclusion."""
 
-from datetime import date
+from datetime import date, datetime, timezone
 import unittest
 from unittest.mock import patch
 import xml.etree.ElementTree as ET
@@ -68,6 +68,42 @@ class RepositoryInventory(unittest.TestCase):
         self.assertIn("2 stars on originals", svg)
         self.assertNotIn("999", svg)
         self.assertNotIn("HTML", svg)
+
+
+class ResearchFocus(unittest.TestCase):
+    def test_nonpublic_focus_stops_before_repository_activity_is_requested(self):
+        focus = {"items": [{"name": "Unavailable", "repository": "private-research"}]}
+        with patch.object(feed, "latest_commit") as api, self.assertRaises(ValueError):
+            feed.research_updates(focus, [])
+        api.assert_not_called()
+
+    def test_focus_uses_the_latest_commit_without_preferring_an_older_release(self):
+        focus = {"items": [{"name": "Research", "repository": "public"}]}
+        stats = [feed.RepositoryStats("public", "Python", 0, False, False)]
+        commit = {"sha": "abc123", "commit": {"message": "Merge pull request #2\n\nNew research work",
+                  "committer": {"date": "2026-11-17T00:00:00Z"}}}
+        with patch.object(feed, "github_json", return_value=[commit]) as api:
+            updates = feed.research_updates(focus, stats)
+        self.assertIn("/commits?", api.call_args.args[0])
+        self.assertEqual(updates[0].kind, "Commit")
+        self.assertEqual(updates[0].title, "New research work")
+
+    def test_repository_titles_cannot_add_markup_to_the_card_or_links(self):
+        focus = {"reviewed_on": "2026-11-17", "items": [{"name": "Research", "stage": "Planning",
+                 "next": "Read the evidence.", "repository": "public", "evidence": "https://example.invalid/evidence"}]}
+        update = feed.Update("Research", "Commit", datetime(2026, 11, 17, tzinfo=timezone.utc),
+                             '<script>& [misleading](https://example.invalid)', "https://github.com/owner/repo/commit/123")
+        svg = feed.render_research_card(focus, [update], "2026-11-18")
+        ET.fromstring(svg)
+        self.assertNotIn("<script>", svg)
+        self.assertIn("&lt;script&gt;", svg)
+        mobile = feed.render_mobile_research_card(focus, [update], "2026-11-18")
+        ET.fromstring(mobile)
+        self.assertNotIn("<script>", mobile)
+        markdown = feed.render_markdown([], [], "2026-11-18", focus, [update])
+        self.assertIn(r"\[misleading\]", markdown)
+        self.assertIn("Directions reviewed 2026-11-17", markdown)
+        self.assertIn("activity refreshed 2026-11-18", markdown)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="204" viewBox="0 0 560 204" font-family="system-ui, sans-serif">
+  <title>Latest Hudson Forge project updates</title>
+  <rect x="1" y="1" width="558" height="202" rx="12" fill="#111922" stroke="#5c493e" stroke-width="2"/>
+  <text x="20" y="33" fill="#f8fafc" font-size="21" font-weight="700">ForgeVigil</text>
+  <text x="540" y="33" text-anchor="end" fill="#f4ac75" font-size="17">2026-11-11</text>
+  <text x="20" y="56" fill="#bdc9d4" font-size="15" font-family="monospace">Commit · Phase G1: generic OpenAI-compatible backend wi…</text>
+  <text x="20" y="97" fill="#f8fafc" font-size="21" font-weight="700">Forge Agent</text>
+  <text x="540" y="97" text-anchor="end" fill="#f4ac75" font-size="17">2026-10-14</text>
+  <text x="20" y="120" fill="#bdc9d4" font-size="15" font-family="monospace">Commit · guards: provenance gate for cited run ids (war…</text>
+  <text x="20" y="161" fill="#f8fafc" font-size="21" font-weight="700">HF Critic</text>
+  <text x="540" y="161" text-anchor="end" fill="#f4ac75" font-size="17">2026-08-04</text>
+  <text x="20" y="184" fill="#bdc9d4" font-size="15" font-family="monospace">Commit · Correct inflation factor: 0.500/0.125 = 4.0x,…</text>
+</svg>

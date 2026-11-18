@@ -6,7 +6,7 @@
 
 I build AI systems that record how decisions are made and research tools that make results reproducible. My background in manufacturing also drives my work on workplace injury prevention.
 
-[Company website](https://hudsonforgetechnology.com) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
+[Company website](https://hudsonforgetechnology.com) · [Project explorer](docs/portfolio.md) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
 
 ## Explore my work
 
@@ -28,7 +28,7 @@ I build AI systems that record how decisions are made and research tools that ma
 <a href="docs/current-research.md">
 <picture>
 <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/research-focus-mobile.svg">
-<img src="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/research-focus.svg" alt="Current research at Hudson Forge: Mini-AURION demo preparation and the QEC-P1 follow-up direction, with the latest public default-branch commits." width="760">
+<img src="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/research-focus.svg" alt="Current research at Hudson Forge: Mini-AURION recorded research demo and the QEC-P1 follow-up direction, with the latest public default-branch commits." width="760">
 </picture>
 </a>
 

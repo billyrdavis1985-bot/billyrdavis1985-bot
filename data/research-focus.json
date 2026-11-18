@@ -4,9 +4,9 @@
     {
       "name": "Mini-AURION",
       "repository": "Mini_AURION",
-      "stage": "Demo preparation",
-      "next": "Run the frozen single-page research demo.",
-      "evidence": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/tasks/B2-research.md"
+      "stage": "B2 demo recorded",
+      "next": "Develop B3 collaboration through verified shared notes.",
+      "evidence": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md"
     },
     {
       "name": "QEC-P1",

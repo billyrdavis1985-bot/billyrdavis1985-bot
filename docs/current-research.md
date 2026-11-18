@@ -2,16 +2,17 @@
 
 Two directions currently in focus, with links to their public evidence. Directions were reviewed on November 17, 2026. The separate repository-update card refreshes daily; an update date is not a claim that a scientific milestone has been completed.
 
-## Mini-AURION — preparing the B2 research demo
+## Mini-AURION — B2 research demo recorded
 
-Mini-AURION is a testbed for governed multi-model research. Tiered provider routing, receipts, spend accounting, and local operator controls are documented in its repository. The B2 task specification freezes a single-page research question and a comparison of same-provider and cross-provider verification of a planted unsupported claim.
+Mini-AURION is a testbed for governed multi-model research. Tiered provider routing, receipts, spend accounting, and local operator controls are documented in its repository. The committed B2 demo records a cited brief from one fetched page, a registered forecast, and a planted unsupported claim flagged by both same-provider and cross-provider verification. It is a bounded demonstration, rather than a general verification benchmark.
 
-**Next direction:** run that frozen demo and record the findings. The demo has been specified; its result is not claimed here.
+**Next direction:** develop B3 collaboration through verified shared notes, following the published build order. B3 collaboration remains a future milestone.
 
 - [Project and quick start](https://github.com/billyrdavis1985-bot/Mini_AURION)
 - [Committed B1 tier-routing demo](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/demos/B1.md)
 - [Frozen B2 task and question](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/tasks/B2-research.md)
-- [Vision and milestone definitions](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/VISION.md)
+- [Recorded B2 demo and findings](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md)
+- [Vision and milestone definitions](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/VISION.md)
 
 ## QEC-P1 — measuring inside the computation
 

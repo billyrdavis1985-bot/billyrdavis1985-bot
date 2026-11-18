@@ -22,7 +22,7 @@ The generator paginates GitHub's public user-repositories API. Every public repo
 
 ## Refresh and reproduce
 
-The existing `Project updates` workflow generates the visuals daily, on manual dispatch, and when changes to its workflow or generator files merge into `main`. It publishes the complete output to `profile-updates` only after both generators succeed. Pull-request runs validate and generate previews with read access.
+The existing `Project updates` workflow generates the visuals daily, on manual dispatch, and when matching workflow, generator, focus, or profile-content changes merge into `main`. It publishes the complete output to `profile-updates` only after both generators succeed. Pull-request runs validate and generate previews with read access.
 
 ```bash
 python3 -m unittest discover -s scripts -p 'test_*.py'
@@ -31,5 +31,13 @@ python3 scripts/render_contributions.py /tmp/profile-visuals
 ```
 
 Both generators use only Python's standard library. `GH_TOKEN` is optional for public repository metadata and helps avoid anonymous API rate limits. The HTML-calendar request never uses it. SVG files contain no scripts, external fonts, or external images.
+
+## Navigation and research focus
+
+The four category illustrations are static SVG assets, reproduced with `python3 scripts/render_category_cards.py`. Their category pages are curated starting points, with a link to the complete public inventory. The README selects compact category illustrations and a narrower research card for screens up to 640 pixels wide.
+
+The research-focus card combines two kinds of information. Names, stages, next steps, supporting evidence, and their review date are maintained in `data/research-focus.json`. The latest default-branch commit details are fetched daily from GitHub, independently of the release preference in the existing project-update feed. The card displays both the direction-review date and the activity-refresh date. A repository update is not treated as a completed research milestone.
+
+Focus projects must appear in the public original-repository inventory before their activity is fetched. If a focus project becomes private, generation stops before publishing a replacement snapshot. Updating a research direction requires an edit and review of the JSON and its companion page, `docs/current-research.md`.
 
 Sources: [GitHub profile content](https://docs.github.com/en/account-and-profile/concepts/personal-profile), [contribution graph](https://docs.github.com/en/account-and-profile/concepts/contributions-on-your-profile), and [public repository API](https://docs.github.com/en/rest/repos/repos#list-repositories-for-a-user).

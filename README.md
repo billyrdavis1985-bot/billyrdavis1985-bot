@@ -8,6 +8,32 @@ I build AI systems that record how decisions are made and research tools that ma
 
 [Company website](https://hudsonforgetechnology.com) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
 
+## Explore my work
+
+<table>
+<tr>
+<td width="50%"><a href="docs/projects/ai-agents.md"><picture><source media="(max-width: 640px)" srcset="assets/categories/ai-agents-compact.svg"><img src="assets/categories/ai-agents.svg" alt="Explore AI and agents: model orchestration, reasoning critics, and benchmark studies." width="100%"></picture></a></td>
+<td width="50%"><a href="docs/projects/quantum.md"><picture><source media="(max-width: 640px)" srcset="assets/categories/quantum-compact.svg"><img src="assets/categories/quantum.svg" alt="Explore quantum research: hardware experiments, calibration drift, and error correction." width="100%"></picture></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="docs/projects/safety-data.md"><picture><source media="(max-width: 640px)" srcset="assets/categories/safety-data-compact.svg"><img src="assets/categories/safety-data.svg" alt="Explore safety and data: document controls, manufacturing injury research, and data pipelines." width="100%"></picture></a></td>
+<td width="50%"><a href="docs/projects/tools.md"><picture><source media="(max-width: 640px)" srcset="assets/categories/tools-compact.svg"><img src="assets/categories/tools.svg" alt="Explore tools and foundations: collectors, quantum execution bridges, and reusable research artifacts." width="100%"></picture></a></td>
+</tr>
+</table>
+
+[All collections](docs/projects/README.md) · [Complete public repository directory](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#repository-statistics)
+
+## Current research
+
+<a href="docs/current-research.md">
+<picture>
+<source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/research-focus-mobile.svg">
+<img src="https://raw.githubusercontent.com/billyrdavis1985-bot/billyrdavis1985-bot/profile-updates/research-focus.svg" alt="Current research at Hudson Forge: Mini-AURION demo preparation and the QEC-P1 follow-up direction, with the latest public default-branch commits." width="760">
+</picture>
+</a>
+
+[Directions and supporting evidence](docs/current-research.md) · [Daily repository updates](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#current-research)
+
 ## Built day by day
 
 <a href="https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#contribution-skyline">
@@ -101,4 +127,3 @@ Six selected projects. [Explore the full public collection, including forks](htt
 </details>
 
 [More IRMB research on framing in AI reasoning](https://github.com/billyrdavis1985-bot/mtca-research) · [Quantum coordination experiments](https://github.com/billyrdavis1985-bot/IRMB_Phase7G_Design5_QuantumCausality)
-

@@ -8,12 +8,24 @@ on:
       - "scripts/update_project_feed.py"
       - "scripts/render_contributions.py"
       - "scripts/test_profile_visuals.py"
+      - "scripts/render_category_cards.py"
+      - "data/research-focus.json"
+      - "docs/projects/**"
+      - "docs/current-research.md"
+      - "assets/categories/**"
+      - "README.md"
   pull_request:
     paths:
       - ".github/workflows/project-updates.yml"
       - "scripts/update_project_feed.py"
       - "scripts/render_contributions.py"
       - "scripts/test_profile_visuals.py"
+      - "scripts/render_category_cards.py"
+      - "data/research-focus.json"
+      - "docs/projects/**"
+      - "docs/current-research.md"
+      - "assets/categories/**"
+      - "README.md"
   schedule:
     - cron: "23 8 * * *"
   workflow_dispatch:
@@ -62,7 +74,7 @@ jobs:
           branch=profile-updates
           git fetch --no-tags origin "refs/heads/$branch"
           git switch --detach FETCH_HEAD
-          files=(README.md project-updates.svg project-stats.svg contribution-skyline.svg contribution-skyline-static.svg contributions.json)
+          files=(README.md project-updates.svg project-stats.svg contribution-skyline.svg contribution-skyline-static.svg contributions.json research-focus.svg research-focus-mobile.svg)
           for file in "${files[@]}"; do
             cp "$RUNNER_TEMP/project-feed/$file" "$file"
           done

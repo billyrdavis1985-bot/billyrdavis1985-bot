@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="378" viewBox="0 0 760 378" font-family="system-ui,sans-serif">
+<title>Current research at Hudson Forge</title>
+<desc>Curated next steps alongside the latest public default-branch commits. Repository activity does not imply a completed research milestone.</desc>
+<rect x="1" y="1" width="758" height="376" rx="14" fill="#0b1420" stroke="#405366"/>
+<text x="28" y="31" fill="#edb483" font-size="13" letter-spacing="2">CURRENT RESEARCH</text>
+<text x="28" y="65" fill="#eef3f7" font-size="28" font-weight="700">On the research bench</text>
+<circle cx="35" cy="98" r="5" fill="#edb483"/>
+<text x="58" y="106" fill="#eef3f7" font-size="23" font-weight="700">Mini-AURION</text>
+<text x="730" y="104" text-anchor="end" fill="#90d2e3" font-size="12" letter-spacing="1">DEMO PREPARATION</text>
+<text x="58" y="135" fill="#eef3f7" font-size="16">Next: Run the frozen single-page research demo.</text>
+<text x="58" y="162" fill="#edb483" font-size="13">Commit · 2026-11-17</text>
+<text x="58" y="185" fill="#bdc9d4" font-size="14">Freeze B2 demo: question, planted claim, seeded decision</text>
+<path d="M28 205 H732" stroke="#304152"/>
+<circle cx="35" cy="230" r="5" fill="#edb483"/>
+<text x="58" y="238" fill="#eef3f7" font-size="23" font-weight="700">QEC-P1</text>
+<text x="730" y="236" text-anchor="end" fill="#90d2e3" font-size="12" letter-spacing="1">FOLLOW-UP DIRECTION</text>
+<text x="58" y="267" fill="#eef3f7" font-size="16">Next: Study syndrome data from inside the running code.</text>
+<text x="58" y="294" fill="#edb483" font-size="13">Commit · 2026-10-19</text>
+<text x="58" y="317" fill="#bdc9d4" font-size="14">Multiverse Amendment MV-A1: preflight stops on maintenance and degraded qubits; window…</text>
+<path d="M28 337 H732" stroke="#304152"/>
+<text x="28" y="361" fill="#bdc9d4" font-size="12">Directions reviewed 2026-11-17 · activity refreshed 2026-11-18 UTC</text>
+</svg>

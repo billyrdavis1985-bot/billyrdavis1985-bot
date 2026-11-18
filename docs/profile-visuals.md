@@ -24,6 +24,8 @@ The generator paginates GitHub's public user-repositories API. Every public repo
 
 The existing `Project updates` workflow generates the visuals daily, on manual dispatch, and when matching workflow, generator, focus, or profile-content changes merge into `main`. It publishes the complete output to `profile-updates` only after both generators succeed. Pull-request runs validate and generate previews with read access.
 
+The generated text feed is `UPDATES.md`. The publisher never replaces the root `README.md`. The output branch starts from a complete source snapshot, so it retains the showcase and its assets. If the branch is missing, the publisher recreates it from the checked-out default-branch source. These automatic updates need no manual pull request or merge into `main`.
+
 ```bash
 python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/update_project_feed.py /tmp/profile-visuals

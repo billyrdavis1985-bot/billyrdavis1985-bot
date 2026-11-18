@@ -155,6 +155,9 @@ def render_markdown(updates, stats, refreshed, focus=None, research=None):
     lines = [
         "# Latest project updates",
         "",
+        "Generated automatically for the profile cards. No manual merge of this branch is needed. "
+        f"[Open the profile README](https://github.com/{OWNER}/{OWNER}/blob/main/README.md).",
+        "",
         "One entry per project. GitHub releases take precedence when available. "
         "Otherwise the entry shows the latest commit on the default branch.",
         "",
@@ -375,7 +378,7 @@ def main():
     research_card = render_research_card(focus, research, refreshed)
     mobile_research_card = render_mobile_research_card(focus, research, refreshed)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    (args.output_dir / "README.md").write_text(readme, encoding="utf-8")
+    (args.output_dir / "UPDATES.md").write_text(readme, encoding="utf-8")
     (args.output_dir / "project-updates.svg").write_text(card, encoding="utf-8")
     (args.output_dir / "project-stats.svg").write_text(stats_card, encoding="utf-8")
     (args.output_dir / "research-focus.svg").write_text(research_card, encoding="utf-8")

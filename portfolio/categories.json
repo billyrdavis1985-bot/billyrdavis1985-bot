@@ -1,0 +1,6 @@
+{
+  "ai": {"name": "AI & agents", "description": "Reasoning, model orchestration, and evaluation"},
+  "quantum": {"name": "Quantum research", "description": "Hardware, calibration drift, and error correction"},
+  "safety": {"name": "Safety & data", "description": "Document controls, injury research, and data pipelines"},
+  "tools": {"name": "Tools & foundations", "description": "Collectors, execution bridges, and reusable tools"}
+}

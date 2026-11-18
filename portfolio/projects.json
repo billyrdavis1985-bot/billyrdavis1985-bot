@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "forgevigil",
+    "name": "ForgeVigil",
+    "repository": "ForgeVigil",
+    "category": "safety",
+    "label": "Governed document controls",
+    "image": "assets/forgevigil.webp",
+    "image_alt": "Concept illustration of a forged shield with copper circuit lines",
+    "summary": "An AI agent investigates a document request. Deterministic code checks the evidence, applies policy, and records the decision.",
+    "question": "Can an AI-assisted investigation support document controls while keeping release authority in deterministic code and operator review?",
+    "approach": ["Bound the agent's investigation to read-only tools and an explicit turn and tool budget.", "Verify cited evidence in code before applying the ALLOW, BLOCK, DENY, or REVIEW policy.", "Record decisions, replays, and operator actions in durable receipts."],
+    "finding": "The recorded offline profile demo demonstrates ALLOW, DENY, REVIEW, replay, and a scripted operator release, ending with two approved local outbox items and RESULT PASS.",
+    "scope": "That recording uses fictional cases and a fixture assessor. It demonstrates the control flow, rather than paid-model investigation quality. Live-model experiments and their known misses are reported separately on the evidence page.",
+    "links": [
+      {"label": "Interactive walkthrough", "url": "https://forgevigil.com"},
+      {"label": "Measured evidence", "url": "https://forgevigil.com/evidence"},
+      {"label": "Offline demo transcript", "url": "https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/main/docs/forgevigil-demo.md"},
+      {"label": "Qualification guide", "url": "https://github.com/billyrdavis1985-bot/ForgeVigil/blob/main/QUALIFICATION.md"}
+    ]
+  },
+  {
+    "slug": "forge-agent",
+    "name": "Forge Agent",
+    "repository": "forge-agent",
+    "category": "ai",
+    "label": "Reproducible critic evaluations",
+    "image": "assets/projects/forge-agent.webp",
+    "image_alt": "Concept illustration of a governed agent inside a transparent graphite cube",
+    "summary": "A sandboxed local instrument for evaluating reasoning critics, with pinned models, captured responses, and a traceable evidence chain.",
+    "question": "How can an evaluation agent make a critic's failures observable without giving that agent the final say over whether a scientific diagnosis is correct?",
+    "approach": ["Run local critic models against deliberately corrupted reasoning examples and paired controls.", "Contain execution with software guards and an operating-system sandbox.", "Pin code, data, model identity, and decoding settings; capture responses for independent verification and human adjudication."],
+    "finding": "The repository documents verdict changes under naive repeat runs, the decoding settings used to make tested runs byte-reproducible, and subsequent paired failure-profile analysis.",
+    "scope": "Reproducibility is bounded to the tested model and runtime configuration. The README also describes remaining provenance and information-flow boundaries. Verdict-level classifications still require human interpretation.",
+    "links": [
+      {"label": "Quick start and findings", "url": "https://github.com/billyrdavis1985-bot/forge-agent#quickstart"},
+      {"label": "Verification and boundaries", "url": "https://github.com/billyrdavis1985-bot/forge-agent#verify-the-claims-yourself"},
+      {"label": "Public documentation", "url": "https://github.com/billyrdavis1985-bot/forge-agent/tree/main/docs"}
+    ]
+  },
+  {
+    "slug": "hf-critic",
+    "name": "HF Critic",
+    "repository": "hf-critic",
+    "category": "ai",
+    "label": "Fine-tuning and metric auditing",
+    "image": "assets/projects/hf-critic.webp",
+    "image_alt": "Concept illustration of a copper-lit lens examining reasoning tiles",
+    "summary": "Small open-weight models trained to critique reasoning, with a held-out evaluation and an audit of what the scoring metrics actually measure.",
+    "question": "Can lightweight local models become useful reasoning-process critics, and how much of an apparent gain survives an audit of the measurement?",
+    "approach": ["Fine-tune Qwen and Mistral on a shared critique corpus and compare them with their base models.", "Reserve a 40-question stratified holdout and run additional controlled-corruption studies.", "Audit lexical-overlap and verdict-token scoring against manually read diagnoses."],
+    "finding": "The reported format-compliance result is base-model dependent. The audit shows why lexical overlap and verdict-string recall cannot, on their own, establish correct diagnosis of a reasoning error.",
+    "scope": "The holdout is small, and a self-critique task differs from evaluating another model's reasoning. The repository's metric audit qualifies its headline scores; those scores are not treated here as general reasoning accuracy.",
+    "links": [
+      {"label": "Results", "url": "https://github.com/billyrdavis1985-bot/hf-critic#results"},
+      {"label": "Metric audit", "url": "https://github.com/billyrdavis1985-bot/hf-critic#metric-audit"},
+      {"label": "Experiment log", "url": "https://github.com/billyrdavis1985-bot/hf-critic/blob/master/experiments.md"}
+    ]
+  },
+  {
+    "slug": "hf-iqr-v3",
+    "name": "HF-IQR V3",
+    "repository": "HF-IQR-V3",
+    "category": "ai",
+    "label": "Preregistered critique research",
+    "image": "assets/projects/hf-iqr-v3.webp",
+    "image_alt": "Concept illustration of an AI reasoning research instrument with copper circuitry",
+    "summary": "A preregistered study of five language models under a forced-counterargument intervention, with public checkpoints and validation artifacts.",
+    "question": "Does a previously observed critique-validity deficit persist when the prompt requires independent counterarguments and prohibits validation behavior?",
+    "approach": ["Evaluate five models on a seeded sample of 80 reasoning questions across 12 categories.", "Compare a single-shot condition with a five-round deliberation protocol.", "Keep the primary binary critique rubric separate from secondary analyses of revision, stability, and calibration."],
+    "finding": "The primary binary rubric saturated under the intervention, producing a ceiling-effect null. The repository reports model differences in secondary behavioral analyses.",
+    "scope": "A saturated binary rubric cannot distinguish models at the primary endpoint. Secondary findings have a different evidential role and are not a replacement for the preregistered primary test.",
+    "links": [
+      {"label": "Study overview", "url": "https://github.com/billyrdavis1985-bot/HF-IQR-V3#overview"},
+      {"label": "Published data", "url": "https://github.com/billyrdavis1985-bot/HF-IQR-V3/tree/main/HF_IQR_V3_PUBLISH/data"},
+      {"label": "Preregistration", "url": "https://osf.io/yhk98"}
+    ]
+  },
+  {
+    "slug": "qnn-p1",
+    "name": "QNN-P1",
+    "repository": "IRMB_QNN-P1_DriftArchive_HardwareValidation",
+    "category": "quantum",
+    "label": "Calibration archive to hardware",
+    "image": "assets/projects/qnn-p1.webp",
+    "image_alt": "Concept illustration of a quantum hardware research instrument",
+    "summary": "A Raspberry Pi calibration archive informs noise models that are compared with measured hybrid quantum-neural-network behavior on IBM hardware.",
+    "question": "Can a noise model built from independently collected calibration snapshots predict the behavior of a hybrid quantum neural network on real hardware?",
+    "approach": ["Collect hourly QPU calibration snapshots and use them for qubit-chain selection and noise modeling.", "Compare entangled, entanglement-free, and classical model arms across ideal, noisy, and hardware tiers.", "Keep run-day calibration and layout effects explicit in the preregistered comparisons."],
+    "finding": "In the two reported run-day comparisons, simulation and hardware test accuracy differed by 0.5 percentage points for both Model A and Model C.",
+    "scope": "The hardware cells are single runs on 200 samples, with about one percentage point of measurement noise. This bounded agreement does not establish a general quantum advantage or forecasting performance across devices.",
+    "comparison": [{"model": "Model A", "simulation": "78.0%", "hardware": "78.5%"}, {"model": "Model C", "simulation": "75.0%", "hardware": "75.5%"}],
+    "links": [
+      {"label": "Paper", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/main/PAPER.md"},
+      {"label": "Reproduction guide", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/main/REPRODUCE.md"},
+      {"label": "Preregistration", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/main/PREREGISTRATION.md"}
+    ]
+  },
+  {
+    "slug": "wips",
+    "name": "WIPS",
+    "repository": "WIPS-Preflight-OSHA-2024",
+    "category": "safety",
+    "label": "Manufacturing injury research",
+    "image": "assets/projects/wips.webp",
+    "image_alt": "Concept illustration of industrial safety analytics with copper-lit machinery",
+    "summary": "Workplace injury-risk research using public OSHA records, followed by a decision-support prototype running on synthetic facility data.",
+    "question": "Do public manufacturing records contain useful injury-risk signals, and how could a safety manager inspect those signals in a decision-support interface?",
+    "approach": ["Reduce the OSHA establishment data to 60,702 clean manufacturing records for the preflight investigation.", "Compare feature sets and document a corrected leakage problem in the early modeling work.", "Develop scoring, floor, director, and notification-interface prototypes using synthetic data."],
+    "finding": "The repository reports validated signal within its medium-facility analysis and provides a research-to-prototype path with explicit boundaries between real-data findings and synthetic engineering validation.",
+    "scope": "The system is not deployed. Evidence for medium manufacturing facilities does not transfer automatically to small or very large facilities. Synthetic dashboard behavior does not validate real-world injury prevention.",
+    "links": [
+      {"label": "Preflight research", "url": "https://github.com/billyrdavis1985-bot/WIPS-Preflight-OSHA-2024/tree/main/phase-1-preflight"},
+      {"label": "Decision-support prototype", "url": "https://github.com/billyrdavis1985-bot/WIPS-Preflight-OSHA-2024/tree/main/phase-3-decision-support"},
+      {"label": "Findings and boundaries", "url": "https://github.com/billyrdavis1985-bot/WIPS-Preflight-OSHA-2024#phase-1--preflight-investigation"}
+    ]
+  }
+]

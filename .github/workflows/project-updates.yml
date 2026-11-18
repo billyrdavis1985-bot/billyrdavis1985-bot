@@ -72,9 +72,12 @@ jobs:
         shell: bash
         run: |
           branch=profile-updates
-          git fetch --no-tags origin "refs/heads/$branch"
-          git switch --detach FETCH_HEAD
-          files=(README.md project-updates.svg project-stats.svg contribution-skyline.svg contribution-skyline-static.svg contributions.json research-focus.svg research-focus-mobile.svg)
+          generated_ref=$(git ls-remote --heads origin "refs/heads/$branch")
+          if [[ -n "$generated_ref" ]]; then
+            git fetch --no-tags origin "refs/heads/$branch"
+            git switch --detach FETCH_HEAD
+          fi
+          files=(UPDATES.md project-updates.svg project-stats.svg contribution-skyline.svg contribution-skyline-static.svg contributions.json research-focus.svg research-focus-mobile.svg)
           for file in "${files[@]}"; do
             cp "$RUNNER_TEMP/project-feed/$file" "$file"
           done

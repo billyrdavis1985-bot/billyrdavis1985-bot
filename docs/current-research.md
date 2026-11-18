@@ -26,6 +26,6 @@ QEC-P1 documents a drift-aware repetition-code pilot, including unsuccessful att
 
 ## Latest public repository updates
 
-[Open the daily research updates](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/tree/profile-updates#current-research). The research panel shows the latest default-branch commit for each focus project. These entries report repository activity; the direction text above is maintained separately in [research-focus.json](../data/research-focus.json).
+[Open the daily research updates](https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/profile-updates/UPDATES.md#current-research). The research panel shows the latest default-branch commit for each focus project. These entries report repository activity; the direction text above is maintained separately in [research-focus.json](../data/research-focus.json).
 
 [Explore all fields](projects/README.md) · [Back to the profile](../README.md)

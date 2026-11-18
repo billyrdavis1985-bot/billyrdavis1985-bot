@@ -1,6 +1,8 @@
 """Checks for incomplete public data, pagination and private-data exclusion."""
 
 from datetime import date, datetime, timezone
+from pathlib import Path
+import tempfile
 import unittest
 from unittest.mock import patch
 import xml.etree.ElementTree as ET
@@ -104,6 +106,25 @@ class ResearchFocus(unittest.TestCase):
         self.assertIn(r"\[misleading\]", markdown)
         self.assertIn("Directions reviewed 2026-11-17", markdown)
         self.assertIn("activity refreshed 2026-11-18", markdown)
+
+
+class GeneratedOutput(unittest.TestCase):
+    def test_refresh_preserves_the_showcase_readme(self):
+        focus = feed.load_research_focus()
+        stats = [feed.RepositoryStats(repo, "Python", 0, False, False) for _, repo in feed.PROJECTS]
+        stats += [feed.RepositoryStats(item["repository"], "Python", 0, False, False) for item in focus["items"]]
+        update = feed.Update("Project", "Commit", datetime(2026, 11, 17, tzinfo=timezone.utc),
+                             "Recorded update", "https://github.com/owner/repo/commit/123")
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            (output / "README.md").write_text("The showcase stays here.\n")
+            with patch.object(feed, "public_repository_stats", return_value=stats), \
+                 patch.object(feed, "latest_update", return_value=update), \
+                 patch.object(feed, "research_updates", return_value=[update] * len(focus["items"])), \
+                 patch("sys.argv", ["update_project_feed.py", temporary]):
+                feed.main()
+            self.assertEqual((output / "README.md").read_text(), "The showcase stays here.\n")
+            self.assertTrue((output / "UPDATES.md").is_file())
 
 
 if __name__ == "__main__":

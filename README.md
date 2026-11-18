@@ -9,9 +9,30 @@ One entry per project. GitHub releases take precedence when available. Otherwise
 - **WIPS** · 2026-06-09 · Commit · [Update README.md](https://github.com/billyrdavis1985-bot/WIPS-Preflight-OSHA-2024/commit/0f05881b46b2fcef956b949950749c1b4690dd6e)
 - **HF-IQR V3** · 2026-06-02 · Commit · [Add Colab badge to README](https://github.com/billyrdavis1985-bot/HF-IQR-V3/commit/379eb80f9f095d3e25b78dfa010d746ef773a8b3)
 
+## Current research
+
+Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-18 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
+
+### Mini-AURION
+
+**Demo preparation** · Next: Run the frozen single-page research demo.
+
+Commit · 2026-11-17 · [Freeze B2 demo: question, planted claim, seeded decision](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/b77daa4500dfbd37fe6de5bb6670d57ef679ad96)
+
+[Evidence for the direction](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/tasks/B2-research.md)
+
+### QEC-P1
+
+**Follow-up direction** · Next: Study syndrome data from inside the running code.
+
+Commit · 2026-10-19 · [Multiverse Amendment MV-A1: preflight stops on maintenance and degraded qubits; window 3 cancelled while queued](https://github.com/billyrdavis1985-bot/IRMB_QEC-P1_DriftAware_RepetitionCode/commit/76f8900041fb312ce3764608e999b6f2accf9394)
+
+[Evidence for the direction](https://github.com/billyrdavis1985-bot/IRMB_QEC-P1_DriftAware_RepetitionCode/blob/76f8900041fb312ce3764608e999b6f2accf9394/README.md#next)
+
+
 ## Repository statistics
 
-Public GitHub metadata checked 2026-11-17 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
+Public GitHub metadata checked 2026-11-18 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
 
 **55 public repositories · 38 originals · 17 forks · 62 stars on originals**
 

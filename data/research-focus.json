@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-11-17",
+  "items": [
+    {
+      "name": "Mini-AURION",
+      "repository": "Mini_AURION",
+      "stage": "Demo preparation",
+      "next": "Run the frozen single-page research demo.",
+      "evidence": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/tasks/B2-research.md"
+    },
+    {
+      "name": "QEC-P1",
+      "repository": "IRMB_QEC-P1_DriftAware_RepetitionCode",
+      "stage": "Follow-up direction",
+      "next": "Study syndrome data from inside the running code.",
+      "evidence": "https://github.com/billyrdavis1985-bot/IRMB_QEC-P1_DriftAware_RepetitionCode/blob/76f8900041fb312ce3764608e999b6f2accf9394/README.md#next"
+    }
+  ]
+}

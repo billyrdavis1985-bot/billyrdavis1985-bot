@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" font-family="system-ui,sans-serif">
+  <title>Explore Safety &amp; data</title>
+  <desc>Document controls, injury research. A decorative illustration accompanies this category.</desc>
+  <defs><radialGradient id="halo"><stop stop-color="#a36c43" stop-opacity=".22"/><stop offset="1" stop-color="#0b1420" stop-opacity="0"/></radialGradient></defs>
+  <rect x="1" y="1" width="598" height="238" rx="14" fill="#0b1420" stroke="#405366"/>
+  <ellipse cx="481" cy="101" rx="119" ry="110" fill="url(#halo)"/>
+  <path d="M26 181h327 M26 23v120" stroke="#304152"/>
+  <text x="41" y="43" fill="#edb483" font-size="13" letter-spacing="2">03 / EXPLORE</text>
+  <text x="41" y="113" fill="#eef3f7" font-size="38" font-weight="700">Safety &amp; data</text>
+  <text x="41" y="148" fill="#bdc9d4" font-size="16">Document controls, injury research</text>
+  
+      <g fill="none" stroke="#4c6677" stroke-width="1.4" opacity=".6">
+        <path d="M401 57h150v108H401z M401 84h150 M401 111h150 M401 138h150 M431 57v108 M461 57v108 M491 57v108 M521 57v108"/>
+      </g>
+      <path d="m444 37 65 20v45c0 39-24 61-65 83-40-22-64-44-64-83V57z" fill="#122535" stroke="#edb483" stroke-width="3"/>
+      <path d="m444 54 48 15v33c0 29-18 48-48 65-29-17-47-36-47-65V69z" fill="#1b3140" stroke="#815c43"/>
+      <path d="m420 108 16 16 33-38" fill="none" stroke="#90d2e3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#edb483"><rect x="520" y="113" width="9" height="43" rx="2"/><rect x="536" y="92" width="9" height="64" rx="2"/><rect x="552" y="70" width="9" height="86" rx="2"/></g>
+    
+  <text x="41" y="213" fill="#edb483" font-size="15">Open the collection</text>
+  <path d="M540 207h26m-8-8 8 8-8 8" fill="none" stroke="#edb483" stroke-width="2"/>
+</svg>

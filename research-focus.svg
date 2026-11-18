@@ -6,10 +6,10 @@
 <text x="28" y="65" fill="#eef3f7" font-size="28" font-weight="700">On the research bench</text>
 <circle cx="35" cy="98" r="5" fill="#edb483"/>
 <text x="58" y="106" fill="#eef3f7" font-size="23" font-weight="700">Mini-AURION</text>
-<text x="730" y="104" text-anchor="end" fill="#90d2e3" font-size="12" letter-spacing="1">DEMO PREPARATION</text>
-<text x="58" y="135" fill="#eef3f7" font-size="16">Next: Run the frozen single-page research demo.</text>
-<text x="58" y="162" fill="#edb483" font-size="13">Commit · 2026-11-17</text>
-<text x="58" y="185" fill="#bdc9d4" font-size="14">Freeze B2 demo: question, planted claim, seeded decision</text>
+<text x="730" y="104" text-anchor="end" fill="#90d2e3" font-size="12" letter-spacing="1">B2 DEMO RECORDED</text>
+<text x="58" y="135" fill="#eef3f7" font-size="16">Next: Develop B3 collaboration through verified shared notes.</text>
+<text x="58" y="162" fill="#edb483" font-size="13">Commit · 2026-11-18</text>
+<text x="58" y="185" fill="#bdc9d4" font-size="14">B2 demo record: transcript, F13, Research row to Built</text>
 <path d="M28 205 H732" stroke="#304152"/>
 <circle cx="35" cy="230" r="5" fill="#edb483"/>
 <text x="58" y="238" fill="#eef3f7" font-size="23" font-weight="700">QEC-P1</text>

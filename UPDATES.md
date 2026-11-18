@@ -17,11 +17,11 @@ Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-18 UTC. Di
 
 ### Mini-AURION
 
-**Demo preparation** · Next: Run the frozen single-page research demo.
+**B2 demo recorded** · Next: Develop B3 collaboration through verified shared notes.
 
-Commit · 2026-11-17 · [Freeze B2 demo: question, planted claim, seeded decision](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/b77daa4500dfbd37fe6de5bb6670d57ef679ad96)
+Commit · 2026-11-18 · [B2 demo record: transcript, F13, Research row to Built](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/9e0e7bdb17c20c2b982d518ed72f64a330c33161)
 
-[Evidence for the direction](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/b77daa4500dfbd37fe6de5bb6670d57ef679ad96/docs/tasks/B2-research.md)
+[Evidence for the direction](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md)
 
 ### QEC-P1
 

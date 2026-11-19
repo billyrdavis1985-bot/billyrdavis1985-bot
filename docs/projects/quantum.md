@@ -4,6 +4,8 @@
 
 I run experiments on quantum hardware and study how calibration drift, noise, and experimental controls affect what the results can support.
 
+[Browse this field in the interactive portfolio](https://billyrdavis1985-bot.github.io/billyrdavis1985-bot/?field=quantum#explore)
+
 ## Start with the hardware evidence
 
 | Project | What to explore |

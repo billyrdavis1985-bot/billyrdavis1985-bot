@@ -113,6 +113,34 @@ def feature_card(project, categories):
             f'<a href="projects/{slug}/" aria-label="Explore {escape(name, quote=True)} case study">Explore the work <svg class="arrow" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 13 13 3M3 3h10v10"/></svg></a></div></article>')
 
 
+def collection_cards(categories, originals, overrides):
+    counts = dict.fromkeys(categories, 0)
+    for repo in originals:
+        field = overrides.get(repo["name"], {}).get("category")
+        if field in counts:
+            counts[field] += 1
+
+    cards = []
+    for field, category in categories.items():
+        count = counts[field]
+        if not count:
+            continue
+        count_label = "project" if count == 1 else "projects"
+        cards.append(
+            f'<a class="collection-card" href="?field={quote(field, safe="")}#explore">'
+            f'<strong>{escape(category["name"])}</strong>'
+            f'<span>{escape(category["description"])}</span>'
+            f'<small>{count} original {count_label}</small></a>'
+        )
+    if not cards:
+        return ""
+    return (
+        '<section class="section-wrap collection-section" aria-labelledby="collections-title">'
+        '<h2 id="collections-title">Browse by field</h2>'
+        '<div class="collection-grid">' + "\n".join(cards) + '</div></section>'
+    )
+
+
 def repository_row(repo, override, categories, featured):
     name = repo["name"]
     title = override.get("title", name)
@@ -198,6 +226,7 @@ def build_site(snapshot, output):
         rows = [repository_row(repo, overrides.get(repo["name"], {}), categories, featured)
                 for repo in sorted(repositories, key=lambda repo: repo["updated"], reverse=True)]
         body = Template((ROOT / "portfolio/templates/index.html").read_text()).substitute(
+            collections=collection_cards(categories, originals, overrides),
             stats=stats, featured_count=len(projects), featured="\n".join(feature_card(project, categories) for project in projects),
             research=research_tracks(focus, snapshot, names), focus_reviewed=focus["reviewed_on"],
             category_options=cat_options, language_options=lang_options, total=len(repositories), repositories="\n".join(rows),

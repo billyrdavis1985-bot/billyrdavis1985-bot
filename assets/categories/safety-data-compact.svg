@@ -1,20 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="240" viewBox="0 0 300 240" font-family="system-ui,sans-serif">
-  <title>Explore Safety &amp; data</title>
-  <desc>Document controls, injury research. Compact category navigation.</desc>
-  <rect x="1" y="1" width="298" height="238" rx="14" fill="#0b1420" stroke="#405366"/>
-  <text x="22" y="30" fill="#edb483" font-size="11" letter-spacing="1">03 / EXPLORE</text>
-  <g transform="translate(43 -7) scale(.4)">
-      <g fill="none" stroke="#4c6677" stroke-width="1.4" opacity=".6">
-        <path d="M401 57h150v108H401z M401 84h150 M401 111h150 M401 138h150 M431 57v108 M461 57v108 M491 57v108 M521 57v108"/>
-      </g>
-      <path d="m444 37 65 20v45c0 39-24 61-65 83-40-22-64-44-64-83V57z" fill="#122535" stroke="#edb483" stroke-width="3"/>
-      <path d="m444 54 48 15v33c0 29-18 48-48 65-29-17-47-36-47-65V69z" fill="#1b3140" stroke="#815c43"/>
-      <path d="m420 108 16 16 33-38" fill="none" stroke="#90d2e3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <g fill="#edb483"><rect x="520" y="113" width="9" height="43" rx="2"/><rect x="536" y="92" width="9" height="64" rx="2"/><rect x="552" y="70" width="9" height="86" rx="2"/></g>
-    </g>
-  <text x="22" y="114" fill="#eef3f7" font-size="32" font-weight="700">Safety &amp;</text>
-  <text x="22" y="153" fill="#eef3f7" font-size="32" font-weight="700">data</text>
-  <path d="M22 183h256" stroke="#304152"/>
-  <text x="22" y="214" fill="#edb483" font-size="15">Open collection</text>
-  <path d="M252 208h22m-7-7 7 7-7 7" fill="none" stroke="#edb483" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="172" viewBox="0 0 300 172" font-family="system-ui,sans-serif">
+  <title>Safety &amp; data</title>
+  <desc>Document controls and injury research</desc>
+  <style>.accent { stroke: #a8dbe9; }</style>
+  <rect x="1" y="1" width="298" height="170" rx="15" fill="#0d1622" stroke="#405265" stroke-width="2"/>
+  <g transform="translate(207 28) scale(.64)" fill="none" stroke="#e4aa7b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="1" width="104" height="102" rx="20" fill="#132333" stroke="#344b60" stroke-width="1.5"/>
+    <path d="M57 26l23 9v16c0 13-9 23-23 30-14-7-23-17-23-30V35z"/><path d="m46 52 8 8 15-16" class="accent"/>
+  </g>
+  <g font-size="27" font-weight="700" fill="#f0f4f9"><text x="20" y="67">Safety &amp; data</text></g>
+
+  <path d="M20 125H280" stroke="#2e3e50"/>
+  <text x="20" y="154" fill="#edb483" font-size="16" font-weight="600">Open collection</text>
+  <path d="M260 148h20m-7-7 7 7-7 7" fill="none" stroke="#edb483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

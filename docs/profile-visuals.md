@@ -38,6 +38,8 @@ Both generators use only Python's standard library. `GH_TOKEN` is optional for p
 
 The four category illustrations are static SVG assets, reproduced with `python3 scripts/render_category_cards.py`. Their category pages are curated starting points, with a link to the complete public inventory. The README selects compact category illustrations and a narrower research card for screens up to 640 pixels wide.
 
+The README’s circuit banner and terminal greeting use short GIFs with still images for reduced motion. To rebuild the GIFs and the still greeting locally, run `python3 scripts/render_profile_motion.py` with Pillow installed. The script uses DejaVu Sans Mono by default and accepts a font path with `--mono-font`.
+
 The research-focus card combines two kinds of information. Names, stages, next steps, supporting evidence, and their review date are maintained in `data/research-focus.json`. The latest default-branch commit details are fetched daily from GitHub, independently of the release preference in the existing project-update feed. The card displays both the direction-review date and the activity-refresh date. A repository update is not treated as a completed research milestone.
 
 Focus projects must appear in the public original-repository inventory before their activity is fetched. If a focus project becomes private, generation stops before publishing a replacement snapshot. Updating a research direction requires an edit and review of the JSON and its companion page, `docs/current-research.md`.

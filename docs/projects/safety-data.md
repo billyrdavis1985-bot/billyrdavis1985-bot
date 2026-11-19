@@ -4,6 +4,8 @@
 
 My manufacturing background drives the workplace-safety research. The security projects explore how software can verify evidence, apply rules, and preserve a record of decisions.
 
+[Browse this field in the interactive portfolio](https://billyrdavis1985-bot.github.io/billyrdavis1985-bot/?field=safety#explore)
+
 ## Start here
 
 | Project | What to explore |

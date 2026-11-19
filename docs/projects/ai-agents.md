@@ -4,6 +4,8 @@
 
 I study how models investigate, critique, and revise answers, and build systems that preserve the evidence behind their actions.
 
+[Browse this field in the interactive portfolio](https://billyrdavis1985-bot.github.io/billyrdavis1985-bot/?field=ai#explore)
+
 ## Start here
 
 | Project | What to explore |

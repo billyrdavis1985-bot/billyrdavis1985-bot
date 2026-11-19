@@ -4,6 +4,8 @@
 
 The supporting work makes experiments easier to run, inspect, and repeat. These projects connect local tooling, cloud execution, telemetry, and reusable evidence.
 
+[Browse this field in the interactive portfolio](https://billyrdavis1985-bot.github.io/billyrdavis1985-bot/?field=tools#explore)
+
 | Project | What to explore |
 | --- | --- |
 | [QPU Drift Collector](https://github.com/billyrdavis1985-bot/qpu-drift-collector) | Hourly IBM calibration collection, raw-first storage, SQLite replay, and collection health monitoring. |

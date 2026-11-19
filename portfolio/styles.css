@@ -1490,3 +1490,51 @@ h3 {
   stroke-linejoin:round
 }
 
+
+.collection-section {
+  padding-block:52px 0;
+}
+.collection-section h2 {
+  margin:0 0 20px;
+  font-size:clamp(1.6rem, 3vw, 2.2rem);
+}
+.collection-grid {
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:14px;
+}
+.collection-card {
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#101c29;
+}
+.collection-card:hover {
+  border-color:var(--copper);
+}
+.collection-card strong {
+  color:var(--text);
+  font-size:1rem;
+}
+.collection-card span {
+  flex:1;
+  color:var(--muted);
+  font-size:.83rem;
+}
+.collection-card small {
+  color:var(--copper);
+  font-size:.77rem;
+}
+@media (max-width:860px) {
+  .collection-grid {
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width:400px) {
+  .collection-grid {
+    grid-template-columns:1fr;
+  }
+}

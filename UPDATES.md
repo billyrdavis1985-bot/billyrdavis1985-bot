@@ -13,13 +13,13 @@ One entry per project. GitHub releases take precedence when available. Otherwise
 
 ## Current research
 
-Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-18 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
+Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-19 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
 
 ### Mini-AURION
 
 **B2 demo recorded** · Next: Develop B3 collaboration through verified shared notes.
 
-Commit · 2026-11-18 · [B2 demo record: transcript, F13, Research row to Built](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/9e0e7bdb17c20c2b982d518ed72f64a330c33161)
+Commit · 2026-11-19 · [B3 PR4a: demo runner with serial/parallel legs](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/cb30e9f4a1f2433f9eebc3d5e44ba3f19610e0c9)
 
 [Evidence for the direction](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md)
 
@@ -34,7 +34,7 @@ Commit · 2026-10-19 · [Multiverse Amendment MV-A1: preflight stops on maintena
 
 ## Repository statistics
 
-Public GitHub metadata checked 2026-11-18 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
+Public GitHub metadata checked 2026-11-19 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
 
 **55 public repositories · 38 originals · 17 forks · 62 stars on originals**
 

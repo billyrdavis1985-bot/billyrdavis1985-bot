@@ -1,24 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" font-family="system-ui,sans-serif">
-  <title>Explore AI &amp; agents</title>
-  <desc>Reasoning, models, evaluation. A decorative illustration accompanies this category.</desc>
-  <defs><radialGradient id="halo"><stop stop-color="#a36c43" stop-opacity=".22"/><stop offset="1" stop-color="#0b1420" stop-opacity="0"/></radialGradient></defs>
-  <rect x="1" y="1" width="598" height="238" rx="14" fill="#0b1420" stroke="#405366"/>
-  <ellipse cx="481" cy="101" rx="119" ry="110" fill="url(#halo)"/>
-  <path d="M26 181h327 M26 23v120" stroke="#304152"/>
-  <text x="41" y="43" fill="#edb483" font-size="13" letter-spacing="2">01 / EXPLORE</text>
-  <text x="41" y="113" fill="#eef3f7" font-size="38" font-weight="700">AI &amp; agents</text>
-  <text x="41" y="148" fill="#bdc9d4" font-size="16">Reasoning, models, evaluation</text>
-  
-      <path d="M420 69 469 42 525 64 548 112 508 151 451 145 409 112 420 69 508 151 469 42 451 145 525 64 409 112 548 112 420 69" fill="none" stroke="#aa7454" stroke-width="2"/>
-      <path d="M420 69 484 96 525 64 M451 145 484 96 548 112 M469 42 484 96 508 151 M409 112 484 96" fill="none" stroke="#90d2e3" stroke-width="1.4" opacity=".8"/>
-      <g fill="#edb483" stroke="#5e4435" stroke-width="2">
-        <circle cx="420" cy="69" r="8"/><circle cx="469" cy="42" r="7"/>
-        <circle cx="525" cy="64" r="9"/><circle cx="548" cy="112" r="7"/>
-        <circle cx="508" cy="151" r="8"/><circle cx="451" cy="145" r="7"/>
-        <circle cx="409" cy="112" r="6"/>
-      </g><circle cx="484" cy="96" r="17" fill="#172b3a" stroke="#90d2e3" stroke-width="3"/>
-      <circle cx="484" cy="96" r="6" fill="#c6edf4"/>
-    
-  <text x="41" y="213" fill="#edb483" font-size="15">Open the collection</text>
-  <path d="M540 207h26m-8-8 8 8-8 8" fill="none" stroke="#edb483" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="170" viewBox="0 0 600 170" font-family="system-ui,sans-serif">
+  <title>AI &amp; agents</title>
+  <desc>Model orchestration and evaluation</desc>
+  <style>.accent { stroke: #a8dbe9; }</style>
+  <rect x="1" y="1" width="598" height="168" rx="15" fill="#0d1622" stroke="#405265" stroke-width="2"/>
+  <g transform="translate(446 15)" fill="none" stroke="#e4aa7b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="1" width="104" height="102" rx="20" fill="#132333" stroke="#344b60" stroke-width="1.5"/>
+    <path d="M34 36h16l12 16h14M34 68h16l12-16" /><circle cx="29" cy="36" r="5"/><circle cx="29" cy="68" r="5"/><rect x="76" y="44" width="16" height="16" rx="5" class="accent"/>
+  </g>
+  <g font-size="34" font-weight="700" fill="#f0f4f9"><text x="30" y="67">AI &amp; agents</text></g>
+
+  <text x="30" y="99" fill="#b9c6d3" font-size="17">Model orchestration and evaluation</text>
+  <path d="M30 123H570" stroke="#2e3e50"/>
+  <text x="30" y="152" fill="#edb483" font-size="16" font-weight="600">Open collection</text>
+  <path d="M550 146h20m-7-7 7 7-7 7" fill="none" stroke="#edb483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,12 +1,20 @@
-[![Hudson Forge Technologies — copper circuitry surrounding a microprocessor](assets/hudson-forge-banner.webp)](https://hudsonforgetechnology.com)
+<a href="https://hudsonforgetechnology.com">
+<picture>
+<source media="(prefers-reduced-motion: reduce)" srcset="assets/hudson-forge-banner.webp">
+<img src="assets/motion/circuit-banner.gif" alt="Hudson Forge Technologies. Copper circuitry lights up around a microprocessor." width="864">
+</picture>
+</a>
 
-# Billy R. Davis Jr.
+<h1><picture>
+<source media="(prefers-reduced-motion: reduce)" srcset="assets/motion/greeting.png">
+<img src="assets/motion/greeting.gif" alt="Hi, I’m Billy R. Davis Jr." width="700">
+</picture></h1>
 
 **Independent AI researcher and founder of Hudson Forge Technologies**
 
 I build AI systems that record how decisions are made and research tools that make results reproducible. My background in manufacturing also drives my work on workplace injury prevention.
 
-[Company website](https://hudsonforgetechnology.com) · [Project explorer](docs/portfolio.md) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
+[Company website](https://hudsonforgetechnology.com) · [Interactive portfolio](https://billyrdavis1985-bot.github.io/billyrdavis1985-bot/) · [Browse all repositories](https://github.com/billyrdavis1985-bot?tab=repositories)
 
 ## Explore my work
 

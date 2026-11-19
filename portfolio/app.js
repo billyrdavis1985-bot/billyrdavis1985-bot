@@ -3,6 +3,17 @@
   "use strict";
   const form = document.querySelector("#project-filters");
   if (!form) return;
+  const motion = document.querySelector("#hero-motion");
+  if (motion) {
+    const artwork = motion.closest(".hero-art");
+    artwork.classList.add("is-animated");
+    motion.hidden = false;
+    motion.addEventListener("click", () => {
+      const paused = artwork.classList.toggle("motion-paused");
+      motion.textContent = paused ? "Play motion" : "Pause motion";
+    });
+  }
+
   const query = document.querySelector("#query");
   const category = document.querySelector("#category");
   const language = document.querySelector("#language");

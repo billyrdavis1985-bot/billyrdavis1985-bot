@@ -95,11 +95,11 @@ def date_label(value):
     return datetime.fromisoformat(value).strftime("%b %d, %Y")
 
 
-def render_base(body, title, description, snapshot_date, nested=False, script=None):
-    prefix = "../../" if nested else ""
+def render_base(body, title, description, snapshot_date, depth=0, script=None):
+    prefix = "../" * depth
     return Template((ROOT / "portfolio/templates/base.html").read_text()).substitute(
         body=body, title=escape(title, quote=True), description=escape(description, quote=True),
-        prefix=prefix, home="../../" if nested else "./", snapshot_date=escape(snapshot_date),
+        prefix=prefix, home=prefix or "./", snapshot_date=escape(snapshot_date),
         scripts=f'<script src="{prefix}assets/{script}" defer></script>' if script else "",
     )
 
@@ -201,6 +201,35 @@ def research_tracks(focus, snapshot, names, replays):
     return "\n".join(tracks)
 
 
+def evidence_entries(projects):
+    project_by_slug = {project["slug"]: project for project in projects}
+    entries = []
+    for entry in read_json(ROOT / "portfolio/evidence.json"):
+        slug = entry["project"]
+        if slug not in project_by_slug:
+            continue
+        project = project_by_slug[slug]
+        name = escape(project["name"])
+        links = []
+        for link in entry["links"]:
+            if "path" in link:
+                links.append(f'<a href="{escape(link["path"], quote=True)}">{escape(link["label"])}</a>')
+            else:
+                links.append(html_link(link["label"], link["url"]))
+        entries.append(
+            f'<article class="evidence-entry" id="{slug}" aria-labelledby="{slug}-title">'
+            f'<header><p class="category-label">{escape(entry["kind"])}</p>'
+            f'<h2 id="{slug}-title"><a href="../projects/{slug}/">{name}</a></h2></header>'
+            '<dl class="evidence-summary">'
+            f'<div><dt>What was tested</dt><dd>{escape(project["question"])}</dd></div>'
+            f'<div><dt>What the record showed</dt><dd>{escape(project["finding"])}</dd></div>'
+            f'<div><dt>Scope and limits</dt><dd>{escape(project["scope"])}</dd></div>'
+            '</dl><h3>Verify it yourself</h3><div class="source-links">'
+            + "".join(links) + '</div></article>'
+        )
+    return "\n".join(entries) or "<p>No public evidence entries are available.</p>"
+
+
 def build_site(snapshot, output):
     if snapshot.get("schema") != 1 or snapshot.get("owner") != OWNER:
         raise ValueError("Unrecognized public repository snapshot")
@@ -286,7 +315,14 @@ def build_site(snapshot, output):
             destination = stage / "projects" / project["slug"]
             destination.mkdir(parents=True)
             (destination / "index.html").write_text(render_base(page, f'{project["name"]} | Hudson Forge',
-                project["summary"], date, nested=True, script="replay.js" if replay else None), encoding="utf-8")
+                project["summary"], date, depth=2, script="replay.js" if replay else None), encoding="utf-8")
+        evidence = Template((ROOT / "portfolio/templates/evidence.html").read_text()).substitute(
+            entries=evidence_entries(projects))
+        (stage / "evidence").mkdir()
+        (stage / "evidence/index.html").write_text(
+            render_base(evidence, "Evidence Explorer | Hudson Forge",
+                        "Check the findings and source artifacts behind Hudson Forge projects.", date, depth=1),
+            encoding="utf-8")
         not_found = '<section class="section-wrap case-header"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>Follow another thread.</h1><p class="case-summary">This page is not in the portfolio.</p><a class="button primary" href="./">Back to the collection →</a></section>'
         (stage / "404.html").write_text(render_base(not_found, "Page not found | Hudson Forge", "Return to the Hudson Forge project collection.", date), encoding="utf-8")
         if output.exists():

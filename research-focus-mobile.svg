@@ -8,9 +8,9 @@
 <text x="24" y="130" fill="#90d2e3" font-size="12" letter-spacing="1">B2 DEMO RECORDED</text>
 <text x="24" y="164" fill="#eef3f7" font-size="17">Next: Develop B3 collaboration</text>
 <text x="24" y="185" fill="#eef3f7" font-size="17">through verified shared notes.</text>
-<text x="24" y="212" fill="#edb483" font-size="13">Commit · 2026-11-19</text>
-<text x="24" y="235" fill="#bdc9d4" font-size="14">B3 PR4a: demo runner with serial/parallel</text>
-<text x="24" y="254" fill="#bdc9d4" font-size="14">legs</text>
+<text x="24" y="212" fill="#edb483" font-size="13">Commit · 2026-11-20</text>
+<text x="24" y="235" fill="#bdc9d4" font-size="14">B3 PR4b: demo transcript, F14, Multi-agent</text>
+<text x="24" y="254" fill="#bdc9d4" font-size="14">row</text>
 <path d="M24 280 H356" stroke="#304152"/>
 <text x="24" y="324" fill="#eef3f7" font-size="24" font-weight="700">QEC-P1</text>
 <text x="24" y="348" fill="#90d2e3" font-size="12" letter-spacing="1">FOLLOW-UP DIRECTION</text>
@@ -22,5 +22,5 @@
 <text x="24" y="491" fill="#bdc9d4" font-size="14">3…</text>
 <path d="M24 517 H356" stroke="#304152"/>
 <text x="24" y="552" fill="#bdc9d4" font-size="12">Directions reviewed 2026-11-17</text>
-<text x="24" y="572" fill="#bdc9d4" font-size="12">Activity refreshed 2026-11-19 UTC</text>
+<text x="24" y="572" fill="#bdc9d4" font-size="12">Activity refreshed 2026-11-20 UTC</text>
 </svg>

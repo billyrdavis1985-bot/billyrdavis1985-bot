@@ -1739,3 +1739,43 @@ h3 {
     grid-template-columns:1fr;
   }
 }
+
+.evidence-explorer {
+  max-width:960px;
+  padding-bottom:64px;
+}
+.evidence-entry {
+  margin-bottom:28px;
+  padding:clamp(18px, 4vw, 35px);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#101b28;
+}
+.evidence-entry h2 {
+  margin:0;
+  font-size:clamp(1.55rem, 4vw, 2rem);
+}
+.evidence-entry h2 a:hover {
+  text-decoration:underline;
+}
+.evidence-entry h3 {
+  margin:24px 0 10px;
+  font-size:1rem;
+}
+.evidence-summary {
+  display:grid;
+  gap:14px;
+  margin:20px 0 0;
+}
+.evidence-summary > div {
+  padding-top:14px;
+  border-top:1px solid var(--line);
+}
+.evidence-summary dt {
+  color:var(--copper);
+  font-weight:600;
+}
+.evidence-summary dd {
+  margin:4px 0 0;
+  color:var(--muted);
+}

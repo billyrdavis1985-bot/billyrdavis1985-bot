@@ -1,0 +1,27 @@
+[
+  {
+    "project": "mini-aurion",
+    "kind": "Recorded verifier run",
+    "links": [
+      {"label": "Replay the B2 run", "path": "../projects/mini-aurion/#replay"},
+      {"label": "Read the recorded B2 transcript", "url": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md"}
+    ]
+  },
+  {
+    "project": "forgevigil",
+    "kind": "Offline policy demo",
+    "links": [
+      {"label": "Read the captured run", "url": "https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/1597ae3f20007520ce75b79497953132b2a8b967/docs/forgevigil-demo.txt"},
+      {"label": "Trace the demo decisions", "url": "https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/1597ae3f20007520ce75b79497953132b2a8b967/docs/forgevigil-demo.md"}
+    ]
+  },
+  {
+    "project": "qnn-p1",
+    "kind": "Hardware comparison",
+    "links": [
+      {"label": "Read the paper", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/a484e91cd12549ac89ec652f114279d745a8eed8/PAPER.md"},
+      {"label": "Read the preregistration", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/a484e91cd12549ac89ec652f114279d745a8eed8/PREREGISTRATION.md"},
+      {"label": "Open the reproduction guide", "url": "https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation/blob/a484e91cd12549ac89ec652f114279d745a8eed8/REPRODUCE.md"}
+    ]
+  }
+]

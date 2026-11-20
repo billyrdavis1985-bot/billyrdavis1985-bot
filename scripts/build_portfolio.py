@@ -323,6 +323,14 @@ def build_site(snapshot, output):
             render_base(evidence, "Evidence Explorer | Hudson Forge",
                         "Check the findings and source artifacts behind Hudson Forge projects.", date, depth=1),
             encoding="utf-8")
+        if "forgevigil" in {project["slug"] for project in projects}:
+            guide = (ROOT / "portfolio/templates/forgevigil-run.html").read_text(encoding="utf-8")
+            guide_dir = stage / "evidence/forgevigil"
+            guide_dir.mkdir()
+            (guide_dir / "index.html").write_text(
+                render_base(guide, "Run the ForgeVigil demo | Hudson Forge",
+                            "Reproduce the captured offline ForgeVigil run.", date, depth=2),
+                encoding="utf-8")
         not_found = '<section class="section-wrap case-header"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>Follow another thread.</h1><p class="case-summary">This page is not in the portfolio.</p><a class="button primary" href="./">Back to the collection →</a></section>'
         (stage / "404.html").write_text(render_base(not_found, "Page not found | Hudson Forge", "Return to the Hudson Forge project collection.", date), encoding="utf-8")
         if output.exists():

@@ -1,0 +1,43 @@
+<article class="section-wrap evidence-explorer">
+  <header class="case-header">
+    <a class="back-link" href="../#forgevigil">Back to ForgeVigil evidence</a>
+    <h1>Run the ForgeVigil demo</h1>
+    <p class="case-summary">Reproduce the recorded policy decisions locally using fictional requests and a fixture assessor.</p>
+  </header>
+
+  <section class="evidence-entry" aria-labelledby="run-heading">
+    <h2 id="run-heading">Run it locally</h2>
+    <p>You’ll need Git and Python 3.11–3.13. The demo uses the Python standard library and temporary local state. It makes zero model calls and requires no API key.</p>
+    <ol class="approach-list">
+      <li>
+        <strong>Clone the source and check out the recorded revision.</strong>
+        <pre class="run-command"><code>git clone https://github.com/billyrdavis1985-bot/ForgeVigil.git
+cd ForgeVigil
+git checkout --detach fc771b36b16a49915c07891673fc4bc5ead9b3c8</code></pre>
+      </li>
+      <li>
+        <strong>Run the fixture demo from the repository root.</strong>
+        <pre class="run-command"><code>python3 -B -m forge_vigil demo --assessor fixture --review</code></pre>
+        <p>On Windows, use <code>py -3</code> in place of <code>python3</code> if you use the Python launcher.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="evidence-entry" aria-labelledby="compare-heading">
+    <h2 id="compare-heading">Compare your result</h2>
+    <dl class="evidence-summary">
+      <div><dt>ALLOW · HTTP 200</dt><dd>The approved request delivered the public document to the local outbox.</dd></div>
+      <div><dt>DENY · HTTP 403</dt><dd>The restricted document stayed out of the outbox.</dd></div>
+      <div><dt>REVIEW · HTTP 202</dt><dd>The request with unverified approval waited for an operator decision.</dd></div>
+      <div><dt>Replay</dt><dd>Replaying the approved request created no new assessment or delivery.</dd></div>
+      <div><dt>Scripted operator release</dt><dd>The demo rechecked scope and released the held request.</dd></div>
+      <div><dt>Final check</dt><dd>Expect two outbox items containing only approved public-spec bytes, zero model calls, exit code 0, and <code>RESULT: PASS</code>.</dd></div>
+    </dl>
+    <p>Timestamps and generated effect IDs can vary. Compare the decisions and final checks.</p>
+    <p>This fixture run demonstrates how the local policy, review, replay, and delivery paths behave. It provides no measurement of live model accuracy.</p>
+    <div class="source-links">
+      <a href="https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/1597ae3f20007520ce75b79497953132b2a8b967/docs/forgevigil-demo.txt">Read the captured run</a>
+      <a href="https://github.com/billyrdavis1985-bot/ForgeVigil/blob/fc771b36b16a49915c07891673fc4bc5ead9b3c8/forge_vigil/demo.py">Inspect the pinned demo source</a>
+    </div>
+  </section>
+</article>

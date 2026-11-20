@@ -12,6 +12,7 @@
     "kind": "Offline policy demo",
     "links": [
       {"label": "Read the captured run", "url": "https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/1597ae3f20007520ce75b79497953132b2a8b967/docs/forgevigil-demo.txt"},
+      {"label": "Run it yourself", "path": "forgevigil/"},
       {"label": "Trace the demo decisions", "url": "https://github.com/billyrdavis1985-bot/billyrdavis1985-bot/blob/1597ae3f20007520ce75b79497953132b2a8b967/docs/forgevigil-demo.md"}
     ]
   },

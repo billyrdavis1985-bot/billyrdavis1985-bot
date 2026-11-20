@@ -1779,3 +1779,14 @@ h3 {
   margin:4px 0 0;
   color:var(--muted);
 }
+
+.run-command {
+  overflow-x:auto;
+  padding:14px 16px;
+  margin:10px 0;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:#0a1624;
+  color:var(--text);
+  font-size:.875rem;
+}

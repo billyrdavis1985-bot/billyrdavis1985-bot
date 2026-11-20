@@ -1,5 +1,48 @@
 [
   {
+    "slug": "mini-aurion",
+    "name": "Mini-AURION",
+    "repository": "Mini_AURION",
+    "category": "ai",
+    "label": "Research verification",
+    "summary": "Follow one recorded research run from a source page to a cited finding, a registered forecast, and a claim that both verifiers flagged.",
+    "replay": {
+      "template": "mini-aurion-b2.html",
+      "action": "Replay the B2 run",
+      "highlights": {
+        "Source": "One captured page",
+        "Forecast": "45% probability",
+        "Planted claim": "Both verifiers flagged it"
+      }
+    },
+    "question": "Can a research agent tell when a real quote fails to support the claim attached to it?",
+    "approach": [
+      "Freeze the research question and name the one source page the agent can fetch.",
+      "Record a factual finding with its source excerpt and register a separate forecast with a probability, deadline, and resolution criterion.",
+      "Run two verification passes, one using the same model provider and one using a different provider. Give both passes a prewritten claim that uses the captured quote to overstate what IBM had achieved."
+    ],
+    "finding": "Both verifiers accepted the quote and its location, then flagged the planted claim as unsupported. The factual finding stood. The forecast was registered at 45% with its support flag attached.",
+    "scope": "This replay covers one recorded task with one supplied source. Earlier exploratory runs struggled to discover URLs and complete briefs across several pages. The demo establishes what happened in this run. It provides no estimate of general verifier accuracy or forecast calibration.",
+    "links": [
+      {
+        "label": "Read the recorded B2 transcript",
+        "url": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md"
+      },
+      {
+        "label": "Inspect the frozen task",
+        "url": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/tasks/B2-research.md"
+      },
+      {
+        "label": "Read the experiment log",
+        "url": "https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/EXPERIMENTS.md"
+      },
+      {
+        "label": "Explore Mini-AURION",
+        "url": "https://github.com/billyrdavis1985-bot/Mini_AURION"
+      }
+    ]
+  },
+  {
     "slug": "forgevigil",
     "name": "ForgeVigil",
     "repository": "ForgeVigil",

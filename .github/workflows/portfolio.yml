@@ -43,6 +43,7 @@ jobs:
         run: |
           python3 -m unittest discover -s scripts -p 'test_*.py'
           node --check portfolio/app.js
+          node --check portfolio/replay.js
       - name: Build PR preview from the public snapshot
         if: github.event_name == 'pull_request'
         run: python3 scripts/build_portfolio.py

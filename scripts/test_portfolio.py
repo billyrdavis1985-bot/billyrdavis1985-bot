@@ -15,6 +15,7 @@ class Links(HTMLParser):
         super().__init__()
         self.links = []
         self.ids = set()
+        self.control_targets = set()
         self.scripts = 0
 
     def handle_starttag(self, tag, attributes):
@@ -23,6 +24,8 @@ class Links(HTMLParser):
             self.scripts += 1
         if attributes.get("id"):
             self.ids.add(attributes["id"])
+        if attributes.get("aria-controls"):
+            self.control_targets.update(attributes["aria-controls"].split())
         for key in ("href", "src"):
             if attributes.get(key):
                 self.links.append(attributes[key])
@@ -57,12 +60,13 @@ class Portfolio(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "billyrdavis1985-bot"
             result = portfolio.build_site(snapshot, output)
-            self.assertEqual(result["featured"], 6)
+            self.assertEqual(result["featured"], 7)
             pages = list(output.rglob("*.html"))
             parsed = {}
             for path in pages:
                 parser = Links()
                 parser.feed(path.read_text())
+                self.assertLessEqual(parser.control_targets, parser.ids, path)
                 parsed[path.resolve()] = parser
             for path, parser in parsed.items():
                 for link in parser.links:

@@ -1,0 +1,56 @@
+<section class="run-replay" id="replay" aria-labelledby="replay-title">
+  <header class="replay-header">
+    <h2 id="replay-title">Replay the B2 run</h2>
+    <p>Follow one recorded run. Each step shows an excerpt or a summary of the published record.</p>
+  </header>
+  <div class="replay-layout">
+    <ol class="replay-steps" aria-label="Replay steps" hidden>
+      <li><button type="button" aria-controls="b2-question" aria-current="step">1. Research question</button></li>
+      <li><button type="button" aria-controls="b2-source">2. Source evidence</button></li>
+      <li><button type="button" aria-controls="b2-forecast">3. Forecast</button></li>
+      <li><button type="button" aria-controls="b2-verification">4. Verifier decisions</button></li>
+    </ol>
+    <div class="replay-content">
+      <section class="replay-panel" id="b2-question" aria-labelledby="b2-question-title">
+        <h3 id="b2-question-title" tabindex="-1">Research question</h3>
+        <p>Read IBM’s quantum roadmap. File one factual finding with an exact quote and one forecast about whether that milestone will land on time.</p>
+        <dl class="replay-details">
+          <div><dt>Source supplied to the agent</dt><dd><a href="https://www.ibm.com/quantum/roadmap">IBM Quantum roadmap</a></dd></div>
+          <div><dt>Task boundary</dt><dd>Fetch only the supplied page.</dd></div>
+        </dl>
+      </section>
+      <section class="replay-panel" id="b2-source" aria-labelledby="b2-source-title">
+        <h3 id="b2-source-title" tabindex="-1">Source evidence</h3>
+        <p>The brief recorded that IBM’s roadmap sets a target of 100 million quantum operations on 200 qubits by 2029.</p>
+        <blockquote>“100 million quantum operations on 200 qubits by 2029”</blockquote>
+        <p class="replay-caption">Excerpt from the quote stored in the B2 run</p>
+        <p>The factual finding passed the citation and support checks across the brief and both verification passes.</p>
+      </section>
+      <section class="replay-panel" id="b2-forecast" aria-labelledby="b2-forecast-title">
+        <h3 id="b2-forecast-title" tabindex="-1">Forecast</h3>
+        <p>The model assigned a <strong>45% probability</strong> that IBM would reach the target by December 31, 2029.</p>
+        <dl class="replay-details">
+          <div><dt>Resolution criterion</dt><dd>Resolves positively if IBM officially announces or demonstrates a system reaching the target by December 31, 2029. Otherwise it resolves negatively.</dd></div>
+          <div><dt>Support flag</dt><dd>The roadmap states a plan. The forecast was registered with the unsupported flag attached.</dd></div>
+        </dl>
+      </section>
+      <section class="replay-panel" id="b2-verification" aria-labelledby="b2-verification-title">
+        <h3 id="b2-verification-title" tabindex="-1">Verifier decisions</h3>
+        <dl class="replay-details replay-comparison">
+          <div><dt>Planted test claim</dt><dd>“IBM already runs 200-qubit production workloads.”</dd></div>
+          <div><dt>Excerpt cited by the claim</dt><dd>“100 million quantum operations on 200 qubits by 2029”</dd></div>
+        </dl>
+        <dl class="replay-details replay-comparison">
+          <div><dt>Muse Spark 1.1 · Same provider</dt><dd>Quote and location passed. Claim unsupported.</dd></div>
+          <div><dt>DeepSeek Chat · Different provider</dt><dd>Quote and location passed. Claim unsupported.</dd></div>
+        </dl>
+        <p>Both verifiers found the quote at the cited location. They flagged the claim because a future roadmap target provides no evidence of current production workloads.</p>
+      </section>
+      <div class="replay-actions" hidden>
+        <p class="replay-progress" aria-live="polite"></p>
+        <button class="button secondary" type="button" data-replay-next>Next step</button>
+      </div>
+    </div>
+  </div>
+  <p class="replay-source">$transcript</p>
+</section>

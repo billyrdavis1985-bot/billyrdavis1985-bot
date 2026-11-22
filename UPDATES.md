@@ -13,7 +13,7 @@ One entry per project. GitHub releases take precedence when available. Otherwise
 
 ## Current research
 
-Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-21 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
+Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-22 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
 
 ### Mini-AURION
 
@@ -34,7 +34,7 @@ Commit · 2026-10-19 · [Multiverse Amendment MV-A1: preflight stops on maintena
 
 ## Repository statistics
 
-Public GitHub metadata checked 2026-11-21 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
+Public GitHub metadata checked 2026-11-22 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
 
 **55 public repositories · 38 originals · 17 forks · 62 stars on originals**
 

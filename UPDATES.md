@@ -13,13 +13,13 @@ One entry per project. GitHub releases take precedence when available. Otherwise
 
 ## Current research
 
-Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-22 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
+Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-23 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
 
 ### Mini-AURION
 
 **B2 demo recorded** · Next: Develop B3 collaboration through verified shared notes.
 
-Commit · 2026-11-21 · [M7 PR4: dead-man&\#x27;s switch and pid-reuse guard](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/6907cd4a483c558496ad6d253047a774addb9cbc)
+Commit · 2026-11-23 · [Synth-JSON PR2: shaped synthesis prompt + fixture proofs](https://github.com/billyrdavis1985-bot/Mini_AURION/commit/25f8b76b120e9d3df5fa217ec837c2a632f9a180)
 
 [Evidence for the direction](https://github.com/billyrdavis1985-bot/Mini_AURION/blob/9e0e7bdb17c20c2b982d518ed72f64a330c33161/docs/demos/B2.md)
 
@@ -34,9 +34,9 @@ Commit · 2026-10-19 · [Multiverse Amendment MV-A1: preflight stops on maintena
 
 ## Repository statistics
 
-Public GitHub metadata checked 2026-11-22 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
+Public GitHub metadata checked 2026-11-23 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
 
-**55 public repositories · 38 originals · 17 forks · 62 stars on originals**
+**57 public repositories · 40 originals · 17 forks · 64 stars on originals**
 
 Original means GitHub does not mark the repository as a fork. Language counts use one primary language per original repository, rather than source-code byte percentages. Unspecified means GitHub has not detected a primary language.
 
@@ -54,6 +54,7 @@ Original means GitHub does not mark the repository as a fork. Language counts us
 | [Emergent\_Coordination\_Intelligence](https://github.com/billyrdavis1985-bot/Emergent_Coordination_Intelligence) | Jupyter Notebook | 3 | No |
 | [flower\_classifier\_quant.tflite](https://github.com/billyrdavis1985-bot/flower_classifier_quant.tflite) | Unspecified | 1 | No |
 | [forge-agent](https://github.com/billyrdavis1985-bot/forge-agent) | Python | 1 | No |
+| [ForgeEmber](https://github.com/billyrdavis1985-bot/ForgeEmber) | Unspecified | 1 | No |
 | [ForgeVigil](https://github.com/billyrdavis1985-bot/ForgeVigil) | Python | 1 | No |
 | [gec-conformance](https://github.com/billyrdavis1985-bot/gec-conformance) | Python | 1 | No |
 | [hf-critic](https://github.com/billyrdavis1985-bot/hf-critic) | Python | 6 | No |
@@ -65,6 +66,7 @@ Original means GitHub does not mark the repository as a fork. Language counts us
 | [IRMB\_Design5\_Dataset\_MultiAgent\_Build](https://github.com/billyrdavis1985-bot/IRMB_Design5_Dataset_MultiAgent_Build) | Jupyter Notebook | 1 | No |
 | [IRMB\_Phase7G\_Design4\_QuantumCoordination](https://github.com/billyrdavis1985-bot/IRMB_Phase7G_Design4_QuantumCoordination) | Jupyter Notebook | 4 | No |
 | [IRMB\_Phase7G\_Design5\_QuantumCausality](https://github.com/billyrdavis1985-bot/IRMB_Phase7G_Design5_QuantumCausality) | Jupyter Notebook | 1 | No |
+| [IRMB\_PPV-P1\_PauliPath\_ExactValidation](https://github.com/billyrdavis1985-bot/IRMB_PPV-P1_PauliPath_ExactValidation) | Python | 1 | No |
 | [IRMB\_QEC-P1\_DriftAware\_RepetitionCode](https://github.com/billyrdavis1985-bot/IRMB_QEC-P1_DriftAware_RepetitionCode) | Python | 1 | No |
 | [IRMB\_QNN-P1\_DriftArchive\_HardwareValidation](https://github.com/billyrdavis1985-bot/IRMB_QNN-P1_DriftArchive_HardwareValidation) | Python | 2 | No |
 | [lattice\_listener.py](https://github.com/billyrdavis1985-bot/lattice_listener.py) | Unspecified | 1 | No |

@@ -13,7 +13,7 @@ One entry per project. GitHub releases take precedence when available. Otherwise
 
 ## Current research
 
-Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-23 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
+Directions reviewed 2026-11-17. Repository activity refreshed 2026-11-24 UTC. Directions are curated separately from repository activity; a commit is not a completed research milestone.
 
 ### Mini-AURION
 
@@ -34,7 +34,7 @@ Commit · 2026-10-19 · [Multiverse Amendment MV-A1: preflight stops on maintena
 
 ## Repository statistics
 
-Public GitHub metadata checked 2026-11-23 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
+Public GitHub metadata checked 2026-11-24 UTC. All public repositories owned by billyrdavis1985-bot are included, including forks and archived projects. Private repositories are excluded.
 
 **57 public repositories · 40 originals · 17 forks · 64 stars on originals**
 
@@ -54,7 +54,7 @@ Original means GitHub does not mark the repository as a fork. Language counts us
 | [Emergent\_Coordination\_Intelligence](https://github.com/billyrdavis1985-bot/Emergent_Coordination_Intelligence) | Jupyter Notebook | 3 | No |
 | [flower\_classifier\_quant.tflite](https://github.com/billyrdavis1985-bot/flower_classifier_quant.tflite) | Unspecified | 1 | No |
 | [forge-agent](https://github.com/billyrdavis1985-bot/forge-agent) | Python | 1 | No |
-| [ForgeEmber](https://github.com/billyrdavis1985-bot/ForgeEmber) | Unspecified | 1 | No |
+| [ForgeEmber](https://github.com/billyrdavis1985-bot/ForgeEmber) | Python | 1 | No |
 | [ForgeVigil](https://github.com/billyrdavis1985-bot/ForgeVigil) | Python | 1 | No |
 | [gec-conformance](https://github.com/billyrdavis1985-bot/gec-conformance) | Python | 1 | No |
 | [hf-critic](https://github.com/billyrdavis1985-bot/hf-critic) | Python | 6 | No |

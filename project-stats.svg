@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="system-ui, sans-serif">
   <title>All public repository statistics</title>
-  <desc>57 public repositories, 40 originals, 17 forks and 64 stars on originals. Metadata refreshed 2026-11-23 UTC.</desc>
+  <desc>57 public repositories, 40 originals, 17 forks and 64 stars on originals. Metadata refreshed 2026-11-24 UTC.</desc>
   <rect x="1" y="1" width="758" height="378" rx="12" fill="#0b1420" stroke="#405366"/>
   <text x="28" y="36" fill="#edb483" font-size="15" letter-spacing="2">THE PUBLIC WORKBENCH</text>
   <text x="28" y="91" fill="#eef3f7" font-size="43" font-weight="700">40 original projects</text>
@@ -16,13 +16,13 @@
   <circle cx="34" cy="262" r="4" fill="#edb483"/>
   <text x="48" y="268" fill="#eef3f7" font-size="17">Jupyter Notebook</text>
   <text x="730" y="268" fill="#edb483" font-size="17" text-anchor="end">23 repositories</text>
-  <rect x="432.80" y="224" width="193.60" height="8" fill="#90d2e3"/>
+  <rect x="432.80" y="224" width="211.20" height="8" fill="#90d2e3"/>
   <circle cx="34" cy="294" r="4" fill="#90d2e3"/>
   <text x="48" y="300" fill="#eef3f7" font-size="17">Python</text>
-  <text x="730" y="300" fill="#90d2e3" font-size="17" text-anchor="end">11 repositories</text>
-  <rect x="626.40" y="224" width="105.60" height="8" fill="#bdc9d4"/>
+  <text x="730" y="300" fill="#90d2e3" font-size="17" text-anchor="end">12 repositories</text>
+  <rect x="644.00" y="224" width="88.00" height="8" fill="#bdc9d4"/>
   <circle cx="34" cy="326" r="4" fill="#bdc9d4"/>
   <text x="48" y="332" fill="#eef3f7" font-size="17">Unspecified</text>
-  <text x="730" y="332" fill="#bdc9d4" font-size="17" text-anchor="end">6 repositories</text>
-  <text x="24" y="362" fill="#bdc9d4" font-size="16">Metadata refreshed 2026-11-23 UTC</text>
+  <text x="730" y="332" fill="#bdc9d4" font-size="17" text-anchor="end">5 repositories</text>
+  <text x="24" y="362" fill="#bdc9d4" font-size="16">Metadata refreshed 2026-11-24 UTC</text>
 </svg>
